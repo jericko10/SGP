@@ -1,0 +1,72 @@
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.csprojResolveAssemblyReference.cache
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.csproj.GenerateResource.Cache
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\bin\Debug\Bunifu_UI_v1.5.3.dll
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPre.gstFrmGestionarAlumno.resources
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPre.gstFrmPrincipal.resources
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\bin\Debug\gstPresentacion.exe.config
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\bin\Debug\gstPresentacion.exe
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\bin\Debug\gstPresentacion.pdb
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.Properties.Resources.resources
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.exe
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.pdb
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.gstFrmAgregarCuotaExtraordinaria.resources
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.gstFrmCuotaApafa.resources
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.gstFrmExonerarDeudas.resources
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.gstFrmFraccionar_Apafa.resources
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.gstFrmGenerarFormatoRecibo.resources
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.gstFrmGestionarDeudasSeccion.resources
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.gstFrmGestionarUsuario.resources
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.gstFrmIniciarSesion.resources
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.gstFrmRecibo.resources
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.gstFrmReporteDeudasAlumno.resources
+c:\users\percypc\documents\visual studio 2015\Projects\gstPrySGP\gstPre\obj\Debug\gstPresentacion.gstFrmReportePagoDiario.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\bin\Debug\gstPresentacion.exe.config
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.exe
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.pdb
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\bin\Debug\gstPresentacion.exe
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\bin\Debug\gstPresentacion.pdb
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmAgregarCuotaExtraordinaria.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmCuotaApafa.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmExonerarDeudas.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmFraccionar_Apafa.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmGenerarFormatoRecibo.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPre.gstFrmGestionarAlumno.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmGestionarUsuario.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmIniciarSesion.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPre.gstFrmPrincipal.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmRecibo.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmReporteDeudasAlumno.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmReportePagoDiario.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.Properties.Resources.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.csproj.GenerateResource.Cache
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmReporteDeudasSeccion.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstMatricula.gstFrmMatriculaMasiva.resources
+C:\Users\percypc\Documents\Visual Studio 2015\Projects\gstPrySGP\gstPresentacion\obj\Debug\gstPre.Form1.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\bin\Debug\gstPresentacion.exe.config
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\bin\Debug\gstPresentacion.exe
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\bin\Debug\gstPresentacion.pdb
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.csprojResolveAssemblyReference.cache
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPre.Form1.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstMatricula.gstFrmMatriculaMasiva.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmAgregarCuotaExtraordinaria.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmCuotaApafa.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmExonerarDeudas.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmFraccionar_Apafa.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmGenerarFormatoRecibo.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPre.gstFrmGestionarAlumno.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmReporteDeudasSeccion.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmGestionarUsuario.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmIniciarSesion.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPre.gstFrmPrincipal.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmRecibo.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmReporteDeudasAlumno.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstFrmReportePagoDiario.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.Properties.Resources.resources
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.csproj.GenerateResource.Cache
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.exe
+E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.pdb
+C:\Users\percylp_lp\Desktop\CONSTRUCCION\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\bin\Debug\gstPresentacion.exe.config
+C:\Users\percylp_lp\Desktop\CONSTRUCCION\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.exe
+C:\Users\percylp_lp\Desktop\CONSTRUCCION\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.pdb
