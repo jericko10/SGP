@@ -70,3 +70,6 @@ E:\contruccion\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPre
 C:\Users\percylp_lp\Desktop\CONSTRUCCION\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\bin\Debug\gstPresentacion.exe.config
 C:\Users\percylp_lp\Desktop\CONSTRUCCION\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.exe
 C:\Users\percylp_lp\Desktop\CONSTRUCCION\interfaces\gstPrySGP_D\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.pdb
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstPresentacion\bin\Debug\gstPresentacion.exe.config
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.exe
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.pdb
