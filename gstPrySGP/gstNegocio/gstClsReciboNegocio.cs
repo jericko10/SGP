@@ -15,5 +15,18 @@ namespace gstNegocio
         {
             return GobjRecibo.mtdBuscarAlumno(LstrParametro);
         }
+
+        public DataTable mtdListarDeudaExtraordinaria(int LintCodigoAlumno)
+        {
+            return GobjRecibo.mtdListarDeudaExtraordinaria(LintCodigoAlumno);
+        }
+        public DataTable mtdListarDeudaMensualidad(int LintCodigoAlumno)
+        {
+            return GobjRecibo.mtdListarDeudaMensualidad(LintCodigoAlumno);
+        }
+        public DataTable mtdListarDeudaPagada(int LintCodigoAlumno)
+        {
+            return GobjRecibo.mtdListarDeudaPagada(LintCodigoAlumno);
+        }
     }
 }

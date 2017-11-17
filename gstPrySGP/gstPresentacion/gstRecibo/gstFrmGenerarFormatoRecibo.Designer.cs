@@ -49,24 +49,20 @@
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lblNombreApellidoAlumno = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblCodigoAlumno = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblMontoTotal = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomDataGrid3 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgdDeudaExtraordinaria = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnSeleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgdDeudaMensualidad = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
@@ -81,8 +77,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.bunifuGradientPanel4.SuspendLayout();
             this.bunifuGradientPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgdDeudaExtraordinaria)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgdDeudaMensualidad)).BeginInit();
             this.bunifuGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
@@ -205,16 +201,20 @@
             // 
             this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
             this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel3.Controls.Add(this.button1);
+            this.bunifuGradientPanel3.Controls.Add(this.lblNombreApellidoAlumno);
+            this.bunifuGradientPanel3.Controls.Add(this.lblCodigoAlumno);
+            this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel10);
             this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel6);
+            this.bunifuGradientPanel3.Controls.Add(this.button1);
+            this.bunifuGradientPanel3.Controls.Add(this.lblMontoTotal);
             this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel8);
             this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel7);
             this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel5);
             this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel4);
-            this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomDataGrid3);
+            this.bunifuGradientPanel3.Controls.Add(this.dgdDeudaExtraordinaria);
             this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel3);
             this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel2);
-            this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomDataGrid2);
+            this.bunifuGradientPanel3.Controls.Add(this.dgdDeudaMensualidad);
             this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.White;
@@ -224,6 +224,40 @@
             this.bunifuGradientPanel3.Quality = 10;
             this.bunifuGradientPanel3.Size = new System.Drawing.Size(538, 460);
             this.bunifuGradientPanel3.TabIndex = 32;
+            // 
+            // lblNombreApellidoAlumno
+            // 
+            this.lblNombreApellidoAlumno.AutoSize = true;
+            this.lblNombreApellidoAlumno.Location = new System.Drawing.Point(129, 44);
+            this.lblNombreApellidoAlumno.Name = "lblNombreApellidoAlumno";
+            this.lblNombreApellidoAlumno.Size = new System.Drawing.Size(0, 13);
+            this.lblNombreApellidoAlumno.TabIndex = 46;
+            // 
+            // lblCodigoAlumno
+            // 
+            this.lblCodigoAlumno.AutoSize = true;
+            this.lblCodigoAlumno.Location = new System.Drawing.Point(122, 12);
+            this.lblCodigoAlumno.Name = "lblCodigoAlumno";
+            this.lblCodigoAlumno.Size = new System.Drawing.Size(0, 13);
+            this.lblCodigoAlumno.TabIndex = 45;
+            // 
+            // bunifuCustomLabel10
+            // 
+            this.bunifuCustomLabel10.AutoSize = true;
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(18, 44);
+            this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
+            this.bunifuCustomLabel10.Size = new System.Drawing.Size(105, 13);
+            this.bunifuCustomLabel10.TabIndex = 44;
+            this.bunifuCustomLabel10.Text = "Apellidos y Nombres:";
+            // 
+            // bunifuCustomLabel6
+            // 
+            this.bunifuCustomLabel6.AutoSize = true;
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(18, 12);
+            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(98, 13);
+            this.bunifuCustomLabel6.TabIndex = 39;
+            this.bunifuCustomLabel6.Text = "Código del Alumno:";
             // 
             // button1
             // 
@@ -235,14 +269,14 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // bunifuCustomLabel6
+            // lblMontoTotal
             // 
-            this.bunifuCustomLabel6.AutoSize = true;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(179, 382);
-            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(49, 13);
-            this.bunifuCustomLabel6.TabIndex = 42;
-            this.bunifuCustomLabel6.Text = "S/.00.00";
+            this.lblMontoTotal.AutoSize = true;
+            this.lblMontoTotal.Location = new System.Drawing.Point(179, 382);
+            this.lblMontoTotal.Name = "lblMontoTotal";
+            this.lblMontoTotal.Size = new System.Drawing.Size(49, 13);
+            this.lblMontoTotal.TabIndex = 42;
+            this.lblMontoTotal.Text = "S/.00.00";
             // 
             // bunifuCustomLabel8
             // 
@@ -281,13 +315,15 @@
             this.bunifuCustomLabel4.TabIndex = 37;
             this.bunifuCustomLabel4.Text = "CUOTAS EXTRAORDINARIAS";
             // 
-            // bunifuCustomDataGrid3
+            // dgdDeudaExtraordinaria
             // 
+            this.dgdDeudaExtraordinaria.AllowUserToAddRows = false;
+            this.dgdDeudaExtraordinaria.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuCustomDataGrid3.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgdDeudaExtraordinaria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgdDeudaExtraordinaria.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgdDeudaExtraordinaria.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgdDeudaExtraordinaria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -295,48 +331,23 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuCustomDataGrid3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewCheckBoxColumn1});
-            this.bunifuCustomDataGrid3.DoubleBuffered = true;
-            this.bunifuCustomDataGrid3.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid3.HeaderBgColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuCustomDataGrid3.HeaderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuCustomDataGrid3.Location = new System.Drawing.Point(12, 239);
-            this.bunifuCustomDataGrid3.Name = "bunifuCustomDataGrid3";
-            this.bunifuCustomDataGrid3.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid3.Size = new System.Drawing.Size(476, 118);
-            this.bunifuCustomDataGrid3.TabIndex = 36;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "AÑO";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "DESCRIPCIÓN";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "MONTO";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.HeaderText = "SELECCIONAR";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dgdDeudaExtraordinaria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgdDeudaExtraordinaria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgdDeudaExtraordinaria.DoubleBuffered = true;
+            this.dgdDeudaExtraordinaria.EnableHeadersVisualStyles = false;
+            this.dgdDeudaExtraordinaria.HeaderBgColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgdDeudaExtraordinaria.HeaderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgdDeudaExtraordinaria.Location = new System.Drawing.Point(12, 239);
+            this.dgdDeudaExtraordinaria.Name = "dgdDeudaExtraordinaria";
+            this.dgdDeudaExtraordinaria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgdDeudaExtraordinaria.Size = new System.Drawing.Size(476, 118);
+            this.dgdDeudaExtraordinaria.TabIndex = 36;
             // 
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(135, 9);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(262, 12);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(172, 16);
             this.bunifuCustomLabel3.TabIndex = 35;
@@ -352,13 +363,15 @@
             this.bunifuCustomLabel2.TabIndex = 34;
             this.bunifuCustomLabel2.Text = "MENSUALIDADES";
             // 
-            // bunifuCustomDataGrid2
+            // dgdDeudaMensualidad
             // 
+            this.dgdDeudaMensualidad.AllowUserToAddRows = false;
+            this.dgdDeudaMensualidad.AllowUserToDeleteRows = false;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgdDeudaMensualidad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgdDeudaMensualidad.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgdDeudaMensualidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgdDeudaMensualidad.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -366,42 +379,19 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.bunifuCustomDataGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.clnSeleccionar});
-            this.bunifuCustomDataGrid2.DoubleBuffered = true;
-            this.bunifuCustomDataGrid2.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(12, 87);
-            this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
-            this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(476, 118);
-            this.bunifuCustomDataGrid2.TabIndex = 30;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "AÑO";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "DESCRIPCIÓN";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "MONTO";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // clnSeleccionar
-            // 
-            this.clnSeleccionar.HeaderText = "SELECCIONAR";
-            this.clnSeleccionar.Name = "clnSeleccionar";
+            this.dgdDeudaMensualidad.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgdDeudaMensualidad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgdDeudaMensualidad.DoubleBuffered = true;
+            this.dgdDeudaMensualidad.EnableHeadersVisualStyles = false;
+            this.dgdDeudaMensualidad.HeaderBgColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgdDeudaMensualidad.HeaderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgdDeudaMensualidad.Location = new System.Drawing.Point(12, 87);
+            this.dgdDeudaMensualidad.Name = "dgdDeudaMensualidad";
+            this.dgdDeudaMensualidad.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgdDeudaMensualidad.Size = new System.Drawing.Size(476, 118);
+            this.dgdDeudaMensualidad.TabIndex = 30;
+            this.dgdDeudaMensualidad.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgdDeudaMensualidad_CellContentClick);
+            this.dgdDeudaMensualidad.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgdDeudaMensualidad_CellValueChanged);
             // 
             // bunifuGradientPanel2
             // 
@@ -528,6 +518,7 @@
             this.dgdAlumno.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgdAlumno.Size = new System.Drawing.Size(345, 79);
             this.dgdAlumno.TabIndex = 30;
+            this.dgdAlumno.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgdAlumno_CellClick);
             // 
             // txtBuscar
             // 
@@ -566,8 +557,8 @@
             this.bunifuGradientPanel4.PerformLayout();
             this.bunifuGradientPanel3.ResumeLayout(false);
             this.bunifuGradientPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgdDeudaExtraordinaria)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgdDeudaMensualidad)).EndInit();
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.bunifuGradientPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
@@ -590,23 +581,15 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
         private System.Windows.Forms.Button button1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblMontoTotal;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dgdDeudaExtraordinaria;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn clnSeleccionar;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dgdDeudaMensualidad;
         private System.Windows.Forms.ComboBox comboBox1;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
@@ -618,5 +601,9 @@
         private System.Windows.Forms.Panel pnlGenerarFormatoRecibo;
         private Bunifu.Framework.UI.BunifuImageButton btnCerrar;
         private System.Windows.Forms.Button button3;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblNombreApellidoAlumno;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblCodigoAlumno;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
     }
 }

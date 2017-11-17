@@ -71,5 +71,59 @@ namespace gstPresentacion
 
             dgdAlumno.DataSource = LobjAlumno;
         }
+
+        private void dgdAlumno_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            MessageBox.Show(dgdAlumno.CurrentCell.RowIndex.ToString());
+        }
+
+        private void dgdAlumno_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int LintCodigoAlumno = Convert.ToInt32(dgdAlumno.CurrentRow.Cells[0].Value.ToString());
+
+            string LstrNombreApellidoAlumno = dgdAlumno.CurrentRow.Cells[1].Value.ToString().ToUpper() + ", " + dgdAlumno.CurrentRow.Cells[2].Value.ToString();
+
+            lblCodigoAlumno.Text = LintCodigoAlumno.ToString();
+            lblNombreApellidoAlumno.Text = LstrNombreApellidoAlumno;
+
+            gstClsReciboNegocio LobjRecibo = new gstClsReciboNegocio();
+
+            var LobjDeudaExtraordinaria = LobjRecibo.mtdListarDeudaExtraordinaria(LintCodigoAlumno);
+            var LobjDeudaMensualidad = LobjRecibo.mtdListarDeudaMensualidad(LintCodigoAlumno);
+            var LobjDeudaPagada = LobjRecibo.mtdListarDeudaPagada(LintCodigoAlumno);
+
+            dgdDeudaExtraordinaria.DataSource = LobjDeudaExtraordinaria;
+            dgdDeudaMensualidad.DataSource = LobjDeudaMensualidad;
+
+            double LdblMontoTotal = 0;
+
+            foreach(DataRow LobjRegistro in LobjDeudaMensualidad.Rows)
+            {
+                LdblMontoTotal = LdblMontoTotal + Convert.ToDouble(LobjRegistro[2].ToString());
+            }
+
+            foreach(DataRow LobjRegistro in LobjDeudaExtraordinaria.Rows)
+            {
+                LdblMontoTotal = LdblMontoTotal + Convert.ToDouble(LobjRegistro[2].ToString());
+            }
+
+            lblMontoTotal.Text = LdblMontoTotal.ToString();
+        }
+
+        private void dgdDeudaMensualidad_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dgdDeudaMensualidad.CommitEdit(DataGridViewDataErrorContexts.Commit);
+        }
+
+        private void dgdDeudaMensualidad_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            foreach (DataGridViewRow row in dgdDeudaMensualidad.Rows)
+            {
+                if (row.Cells[3].Value.Equals(true))
+                {
+                    //falta seleccionar
+                }
+            }
+        }
     }
 }
