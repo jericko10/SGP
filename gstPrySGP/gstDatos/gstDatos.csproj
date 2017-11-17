@@ -51,21 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="gstALMpAlumno.cs" />
-    <Compile Include="gstCONpConcepto.cs" />
-    <Compile Include="gstCUOtCuota.cs" />
-    <Compile Include="gstDEUtDeuda.cs" />
-    <Compile Include="gstDPGtDeudaPago.cs" />
-    <Compile Include="gstEXOtExoneracion.cs" />
-    <Compile Include="gstFRAtFraccion.cs" />
-    <Compile Include="gstModelo.cs" />
-    <Compile Include="gstRECtRecibo.cs" />
-    <Compile Include="gstUSUpUsuario.cs" />
+    <Compile Include="gstClsAlumno.cs" />
+    <Compile Include="gstClsRecibo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

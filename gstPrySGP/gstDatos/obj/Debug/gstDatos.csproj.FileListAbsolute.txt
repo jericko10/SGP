@@ -1,0 +1,9 @@
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstDatos\bin\Debug\gstDatos.dll
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstDatos\bin\Debug\gstDatos.pdb
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstDatos\bin\Debug\EntityFramework.dll
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstDatos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstDatos\bin\Debug\EntityFramework.xml
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstDatos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstDatos\obj\Debug\gstDatos.csprojResolveAssemblyReference.cache
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstDatos\obj\Debug\gstDatos.dll
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstDatos\obj\Debug\gstDatos.pdb

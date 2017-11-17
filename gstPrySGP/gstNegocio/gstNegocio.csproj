@@ -43,6 +43,12 @@
     <Compile Include="gstClsRecibo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\gstDatos\gstDatos.csproj">
+      <Project>{02c6b9d8-5a13-4295-9a90-129aeedfeec3}</Project>
+      <Name>gstDatos</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

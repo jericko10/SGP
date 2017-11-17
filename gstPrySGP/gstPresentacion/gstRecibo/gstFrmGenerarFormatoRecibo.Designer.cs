@@ -561,7 +561,7 @@
             this.txtBuscar.Size = new System.Drawing.Size(284, 32);
             this.txtBuscar.TabIndex = 29;
             this.txtBuscar.text = "BUSCAR POR APELLIDOS O DNI";
-            this.txtBuscar.OnTextChange += new System.EventHandler(this.txtBuscar_OnTextChange);
+            this.txtBuscar.KeyUp += new System.EventHandler(this.txtBuscar_KeyUp);
             // 
             // gstFrmGenerarFormatoRecibo
             // 

@@ -1,7 +1,9 @@
-﻿using System;
+﻿using gstNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -59,6 +61,25 @@ namespace gstPresentacion
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtBuscar_KeyUp(object sender, EventArgs e)
+        {
+            gstClsRecibo LobjRecibo = new gstClsRecibo();
+
+            List<gstDatos.gstClsAlumno> LobjAlumno = new List<gstDatos.gstClsAlumno>();
+
+            LobjAlumno = LobjRecibo.mtdBuscarAlumno(txtBuscar.text);
+
+            if(LobjAlumno.Count == 0)
+            {
+                dgdAlumno.Rows.Clear();
+            }
+
+            foreach(var LobjRegistro in LobjAlumno)
+            {
+                //dgdAlumno.Rows.Add(LobjRegistro.ALMcodigo, LobjRegistro.ALMapellido, LobjRegistro.ALMnombre);
+            }
         }
     }
 }

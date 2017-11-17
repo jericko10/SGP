@@ -1,0 +1,7 @@
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstNegocio\bin\Debug\gstNegocio.dll
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstNegocio\bin\Debug\gstNegocio.pdb
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstNegocio\bin\Debug\gstDatos.dll
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstNegocio\bin\Debug\gstDatos.pdb
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstNegocio\obj\Debug\gstNegocio.csprojResolveAssemblyReference.cache
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstNegocio\obj\Debug\gstNegocio.dll
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstNegocio\obj\Debug\gstNegocio.pdb
