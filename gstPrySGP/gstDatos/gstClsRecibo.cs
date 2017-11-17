@@ -1,17 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace gstDatos
 {
-    class gstClsRecibo
+    public class gstClsRecibo
     {
-        public List<gstClsAlumno> mtdBuscarAlumno(string LstrParametro)
+        gstClsConexion LobjConexion = new gstClsConexion();
+        public DataTable mtdBuscarAlumno(string LstrParametro)
         {
-            List<gstClsAlumno> LobjAlumno = new List<gstClsAlumno>();
-            return LobjAlumno;
+            LobjConexion.Conectar().Open();
+            string LstrComando = "select ALMcodigo, ALMapellido, ALMnombre from gstALMpAlumno where ALMapellido like ('" + LstrParametro + "%') OR ALMdni like ('" + LstrParametro + "%') AND ALMestado = 'Matriculado'";
+
+            SqlDataAdapter LobjAdaptador = new SqlDataAdapter(LstrComando, LobjConexion.Conectar());
+            DataTable LobjDataTable = new DataTable();
+            LobjAdaptador.Fill(LobjDataTable);
+            LobjConexion.Conectar().Close();
+
+            return LobjDataTable;
         }
     }
 }

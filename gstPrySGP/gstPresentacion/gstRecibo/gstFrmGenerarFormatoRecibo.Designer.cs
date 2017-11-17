@@ -76,9 +76,6 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.dgdAlumno = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.clnCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnApellidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnNombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtBuscar = new Bunifu.Framework.UI.BunifuTextbox();
             this.pnlGenerarFormatoRecibo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -505,6 +502,8 @@
             // 
             // dgdAlumno
             // 
+            this.dgdAlumno.AllowUserToAddRows = false;
+            this.dgdAlumno.AllowUserToDeleteRows = false;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dgdAlumno.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgdAlumno.BackgroundColor = System.Drawing.Color.Gainsboro;
@@ -519,34 +518,16 @@
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgdAlumno.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgdAlumno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgdAlumno.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clnCodigo,
-            this.clnApellidos,
-            this.clnNombres});
             this.dgdAlumno.DoubleBuffered = true;
             this.dgdAlumno.EnableHeadersVisualStyles = false;
             this.dgdAlumno.HeaderBgColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgdAlumno.HeaderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgdAlumno.Location = new System.Drawing.Point(23, 87);
             this.dgdAlumno.Name = "dgdAlumno";
+            this.dgdAlumno.ReadOnly = true;
             this.dgdAlumno.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgdAlumno.Size = new System.Drawing.Size(345, 79);
             this.dgdAlumno.TabIndex = 30;
-            // 
-            // clnCodigo
-            // 
-            this.clnCodigo.HeaderText = "CÓDIGO";
-            this.clnCodigo.Name = "clnCodigo";
-            // 
-            // clnApellidos
-            // 
-            this.clnApellidos.HeaderText = "APELLIDOS";
-            this.clnApellidos.Name = "clnApellidos";
-            // 
-            // clnNombres
-            // 
-            this.clnNombres.HeaderText = "NOMBRES";
-            this.clnNombres.Name = "clnNombres";
             // 
             // txtBuscar
             // 
@@ -634,9 +615,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnCodigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnApellidos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnNombres;
         private System.Windows.Forms.Panel pnlGenerarFormatoRecibo;
         private Bunifu.Framework.UI.BunifuImageButton btnCerrar;
         private System.Windows.Forms.Button button3;

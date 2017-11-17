@@ -65,21 +65,11 @@ namespace gstPresentacion
 
         private void txtBuscar_KeyUp(object sender, EventArgs e)
         {
-            gstClsRecibo LobjRecibo = new gstClsRecibo();
+            gstClsReciboNegocio LobjRecibo = new gstClsReciboNegocio();
 
-            List<gstDatos.gstClsAlumno> LobjAlumno = new List<gstDatos.gstClsAlumno>();
+            var LobjAlumno = LobjRecibo.mtdBuscarAlumno(txtBuscar.text);
 
-            LobjAlumno = LobjRecibo.mtdBuscarAlumno(txtBuscar.text);
-
-            if(LobjAlumno.Count == 0)
-            {
-                dgdAlumno.Rows.Clear();
-            }
-
-            foreach(var LobjRegistro in LobjAlumno)
-            {
-                //dgdAlumno.Rows.Add(LobjRegistro.ALMcodigo, LobjRegistro.ALMapellido, LobjRegistro.ALMnombre);
-            }
+            dgdAlumno.DataSource = LobjAlumno;
         }
     }
 }
