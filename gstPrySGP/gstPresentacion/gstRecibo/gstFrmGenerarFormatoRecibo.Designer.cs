@@ -30,58 +30,55 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gstFrmGenerarFormatoRecibo));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.lblApellido = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblTitulo = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.cmbTareas = new System.Windows.Forms.ComboBox();
             this.pnlGenerarFormatoRecibo = new System.Windows.Forms.Panel();
             this.btnCerrar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuGradientPanel4 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.pnlReciboGenerado = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnEliminarRecibo = new System.Windows.Forms.Button();
+            this.btnVisualizarImprimir = new System.Windows.Forms.Button();
+            this.lblRecibo = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.cmbReciboGenerado = new System.Windows.Forms.ComboBox();
+            this.pnlDeudaPendiente = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.lblNombreApellidoAlumno = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblCodigoAlumno = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lblNombres = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblCodigo = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.btnGenerarRecibo = new System.Windows.Forms.Button();
             this.lblMontoTotal = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblMontoTotalSeleccionado = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblSubTotal = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblDeudaPendienteTotal = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblCuotaExtraordinaria = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.dgdDeudaExtraordinaria = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblDeudaPendiente = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblMensualidad = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.dgdDeudaMensualidad = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.cmbEstado = new System.Windows.Forms.ComboBox();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.pnlDeudaPagada = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.lblDeudaPagada = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.cmbFiltrarDeudaPago = new System.Windows.Forms.ComboBox();
+            this.dgdDeudaPago = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.pnlAlumno = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.dgdAlumno = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.txtBuscar = new Bunifu.Framework.UI.BunifuTextbox();
             this.pnlGenerarFormatoRecibo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            this.bunifuGradientPanel4.SuspendLayout();
-            this.bunifuGradientPanel3.SuspendLayout();
+            this.pnlReciboGenerado.SuspendLayout();
+            this.pnlDeudaPendiente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgdDeudaExtraordinaria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgdDeudaMensualidad)).BeginInit();
-            this.bunifuGradientPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
-            this.bunifuGradientPanel1.SuspendLayout();
+            this.pnlDeudaPagada.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgdDeudaPago)).BeginInit();
+            this.pnlAlumno.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgdAlumno)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,31 +87,31 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // lblApellido
+            // lblTitulo
             // 
-            this.lblApellido.AutoSize = true;
-            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellido.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblApellido.Location = new System.Drawing.Point(32, 9);
-            this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(220, 16);
-            this.lblApellido.TabIndex = 27;
-            this.lblApellido.Text = "GENERAR FORMATO RECIBO";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblTitulo.Location = new System.Drawing.Point(32, 9);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(220, 16);
+            this.lblTitulo.TabIndex = 27;
+            this.lblTitulo.Text = "GENERAR FORMATO RECIBO";
             // 
-            // comboBox1
+            // cmbTareas
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 596);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(217, 21);
-            this.comboBox1.TabIndex = 34;
-            this.comboBox1.Text = "DEUDAS EXTRAORDINARIAS";
+            this.cmbTareas.FormattingEnabled = true;
+            this.cmbTareas.Location = new System.Drawing.Point(12, 596);
+            this.cmbTareas.Name = "cmbTareas";
+            this.cmbTareas.Size = new System.Drawing.Size(217, 21);
+            this.cmbTareas.TabIndex = 34;
+            this.cmbTareas.Text = "DEUDAS EXTRAORDINARIAS";
             // 
             // pnlGenerarFormatoRecibo
             // 
             this.pnlGenerarFormatoRecibo.BackColor = System.Drawing.Color.LightSkyBlue;
             this.pnlGenerarFormatoRecibo.Controls.Add(this.btnCerrar);
-            this.pnlGenerarFormatoRecibo.Controls.Add(this.lblApellido);
+            this.pnlGenerarFormatoRecibo.Controls.Add(this.lblTitulo);
             this.pnlGenerarFormatoRecibo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlGenerarFormatoRecibo.Location = new System.Drawing.Point(0, 0);
             this.pnlGenerarFormatoRecibo.Name = "pnlGenerarFormatoRecibo";
@@ -142,88 +139,90 @@
             this.btnCerrar.Zoom = 10;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // bunifuGradientPanel4
+            // pnlReciboGenerado
             // 
-            this.bunifuGradientPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel4.BackgroundImage")));
-            this.bunifuGradientPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel4.Controls.Add(this.button3);
-            this.bunifuGradientPanel4.Controls.Add(this.button2);
-            this.bunifuGradientPanel4.Controls.Add(this.bunifuCustomLabel9);
-            this.bunifuGradientPanel4.Controls.Add(this.comboBox2);
-            this.bunifuGradientPanel4.GradientBottomLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel4.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel4.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel4.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel4.Location = new System.Drawing.Point(459, 589);
-            this.bunifuGradientPanel4.Name = "bunifuGradientPanel4";
-            this.bunifuGradientPanel4.Quality = 10;
-            this.bunifuGradientPanel4.Size = new System.Drawing.Size(523, 105);
-            this.bunifuGradientPanel4.TabIndex = 34;
+            this.pnlReciboGenerado.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlReciboGenerado.BackgroundImage")));
+            this.pnlReciboGenerado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlReciboGenerado.Controls.Add(this.btnEliminarRecibo);
+            this.pnlReciboGenerado.Controls.Add(this.btnVisualizarImprimir);
+            this.pnlReciboGenerado.Controls.Add(this.lblRecibo);
+            this.pnlReciboGenerado.Controls.Add(this.cmbReciboGenerado);
+            this.pnlReciboGenerado.GradientBottomLeft = System.Drawing.Color.White;
+            this.pnlReciboGenerado.GradientBottomRight = System.Drawing.Color.White;
+            this.pnlReciboGenerado.GradientTopLeft = System.Drawing.Color.White;
+            this.pnlReciboGenerado.GradientTopRight = System.Drawing.Color.White;
+            this.pnlReciboGenerado.Location = new System.Drawing.Point(459, 589);
+            this.pnlReciboGenerado.Name = "pnlReciboGenerado";
+            this.pnlReciboGenerado.Quality = 10;
+            this.pnlReciboGenerado.Size = new System.Drawing.Size(523, 105);
+            this.pnlReciboGenerado.TabIndex = 34;
             // 
-            // button3
+            // btnEliminarRecibo
             // 
-            this.button3.Location = new System.Drawing.Point(329, 70);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(159, 23);
-            this.button3.TabIndex = 45;
-            this.button3.Text = "ELIMINAR";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEliminarRecibo.Location = new System.Drawing.Point(329, 70);
+            this.btnEliminarRecibo.Name = "btnEliminarRecibo";
+            this.btnEliminarRecibo.Size = new System.Drawing.Size(159, 23);
+            this.btnEliminarRecibo.TabIndex = 45;
+            this.btnEliminarRecibo.Text = "ELIMINAR";
+            this.btnEliminarRecibo.UseVisualStyleBackColor = true;
+            this.btnEliminarRecibo.Click += new System.EventHandler(this.btnEliminarRecibo_Click);
             // 
-            // button2
+            // btnVisualizarImprimir
             // 
-            this.button2.Location = new System.Drawing.Point(329, 41);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(159, 23);
-            this.button2.TabIndex = 44;
-            this.button2.Text = "VISUALIZAR/IMPRIMIR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnVisualizarImprimir.Location = new System.Drawing.Point(329, 41);
+            this.btnVisualizarImprimir.Name = "btnVisualizarImprimir";
+            this.btnVisualizarImprimir.Size = new System.Drawing.Size(159, 23);
+            this.btnVisualizarImprimir.TabIndex = 44;
+            this.btnVisualizarImprimir.Text = "VISUALIZAR/IMPRIMIR";
+            this.btnVisualizarImprimir.UseVisualStyleBackColor = true;
+            this.btnVisualizarImprimir.Click += new System.EventHandler(this.btnVisualizarImprimir_Click);
             // 
-            // bunifuCustomLabel9
+            // lblRecibo
             // 
-            this.bunifuCustomLabel9.AutoSize = true;
-            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(229, 12);
-            this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(104, 16);
-            this.bunifuCustomLabel9.TabIndex = 33;
-            this.bunifuCustomLabel9.Text = "MIS RECIBOS";
+            this.lblRecibo.AutoSize = true;
+            this.lblRecibo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecibo.Location = new System.Drawing.Point(229, 12);
+            this.lblRecibo.Name = "lblRecibo";
+            this.lblRecibo.Size = new System.Drawing.Size(104, 16);
+            this.lblRecibo.TabIndex = 33;
+            this.lblRecibo.Text = "MIS RECIBOS";
             // 
-            // comboBox2
+            // cmbReciboGenerado
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(21, 43);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(216, 21);
-            this.comboBox2.TabIndex = 28;
-            this.comboBox2.Text = "RECIBOS GENERADOS";
+            this.cmbReciboGenerado.FormattingEnabled = true;
+            this.cmbReciboGenerado.Location = new System.Drawing.Point(21, 43);
+            this.cmbReciboGenerado.Name = "cmbReciboGenerado";
+            this.cmbReciboGenerado.Size = new System.Drawing.Size(216, 21);
+            this.cmbReciboGenerado.TabIndex = 28;
+            this.cmbReciboGenerado.Text = "RECIBOS GENERADOS";
             // 
-            // bunifuGradientPanel3
+            // pnlDeudaPendiente
             // 
-            this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
-            this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel3.Controls.Add(this.lblNombreApellidoAlumno);
-            this.bunifuGradientPanel3.Controls.Add(this.lblCodigoAlumno);
-            this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel10);
-            this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel6);
-            this.bunifuGradientPanel3.Controls.Add(this.button1);
-            this.bunifuGradientPanel3.Controls.Add(this.lblMontoTotal);
-            this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel8);
-            this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel7);
-            this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel5);
-            this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel4);
-            this.bunifuGradientPanel3.Controls.Add(this.dgdDeudaExtraordinaria);
-            this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel3);
-            this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel2);
-            this.bunifuGradientPanel3.Controls.Add(this.dgdDeudaMensualidad);
-            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel3.Location = new System.Drawing.Point(459, 102);
-            this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
-            this.bunifuGradientPanel3.Quality = 10;
-            this.bunifuGradientPanel3.Size = new System.Drawing.Size(538, 460);
-            this.bunifuGradientPanel3.TabIndex = 32;
+            this.pnlDeudaPendiente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlDeudaPendiente.BackgroundImage")));
+            this.pnlDeudaPendiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlDeudaPendiente.Controls.Add(this.lblNombreApellidoAlumno);
+            this.pnlDeudaPendiente.Controls.Add(this.lblCodigoAlumno);
+            this.pnlDeudaPendiente.Controls.Add(this.lblNombres);
+            this.pnlDeudaPendiente.Controls.Add(this.lblCodigo);
+            this.pnlDeudaPendiente.Controls.Add(this.btnGenerarRecibo);
+            this.pnlDeudaPendiente.Controls.Add(this.lblMontoTotal);
+            this.pnlDeudaPendiente.Controls.Add(this.lblMontoTotalSeleccionado);
+            this.pnlDeudaPendiente.Controls.Add(this.lblSubTotal);
+            this.pnlDeudaPendiente.Controls.Add(this.lblDeudaPendienteTotal);
+            this.pnlDeudaPendiente.Controls.Add(this.lblCuotaExtraordinaria);
+            this.pnlDeudaPendiente.Controls.Add(this.dgdDeudaExtraordinaria);
+            this.pnlDeudaPendiente.Controls.Add(this.lblDeudaPendiente);
+            this.pnlDeudaPendiente.Controls.Add(this.lblMensualidad);
+            this.pnlDeudaPendiente.Controls.Add(this.dgdDeudaMensualidad);
+            this.pnlDeudaPendiente.GradientBottomLeft = System.Drawing.Color.White;
+            this.pnlDeudaPendiente.GradientBottomRight = System.Drawing.Color.White;
+            this.pnlDeudaPendiente.GradientTopLeft = System.Drawing.Color.White;
+            this.pnlDeudaPendiente.GradientTopRight = System.Drawing.Color.White;
+            this.pnlDeudaPendiente.Location = new System.Drawing.Point(459, 102);
+            this.pnlDeudaPendiente.Name = "pnlDeudaPendiente";
+            this.pnlDeudaPendiente.Quality = 10;
+            this.pnlDeudaPendiente.Size = new System.Drawing.Size(538, 460);
+            this.pnlDeudaPendiente.TabIndex = 32;
             // 
             // lblNombreApellidoAlumno
             // 
@@ -241,97 +240,97 @@
             this.lblCodigoAlumno.Size = new System.Drawing.Size(0, 13);
             this.lblCodigoAlumno.TabIndex = 45;
             // 
-            // bunifuCustomLabel10
+            // lblNombres
             // 
-            this.bunifuCustomLabel10.AutoSize = true;
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(18, 44);
-            this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
-            this.bunifuCustomLabel10.Size = new System.Drawing.Size(105, 13);
-            this.bunifuCustomLabel10.TabIndex = 44;
-            this.bunifuCustomLabel10.Text = "Apellidos y Nombres:";
+            this.lblNombres.AutoSize = true;
+            this.lblNombres.Location = new System.Drawing.Point(18, 44);
+            this.lblNombres.Name = "lblNombres";
+            this.lblNombres.Size = new System.Drawing.Size(105, 13);
+            this.lblNombres.TabIndex = 44;
+            this.lblNombres.Text = "Apellidos y Nombres:";
             // 
-            // bunifuCustomLabel6
+            // lblCodigo
             // 
-            this.bunifuCustomLabel6.AutoSize = true;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(18, 12);
-            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(98, 13);
-            this.bunifuCustomLabel6.TabIndex = 39;
-            this.bunifuCustomLabel6.Text = "Código del Alumno:";
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Location = new System.Drawing.Point(18, 12);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(98, 13);
+            this.lblCodigo.TabIndex = 39;
+            this.lblCodigo.Text = "Código del Alumno:";
             // 
-            // button1
+            // btnGenerarRecibo
             // 
-            this.button1.Location = new System.Drawing.Point(232, 424);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 23);
-            this.button1.TabIndex = 43;
-            this.button1.Text = "GENERAR RECIBO";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnGenerarRecibo.Location = new System.Drawing.Point(222, 420);
+            this.btnGenerarRecibo.Name = "btnGenerarRecibo";
+            this.btnGenerarRecibo.Size = new System.Drawing.Size(121, 23);
+            this.btnGenerarRecibo.TabIndex = 43;
+            this.btnGenerarRecibo.Text = "GENERAR RECIBO";
+            this.btnGenerarRecibo.UseVisualStyleBackColor = true;
+            this.btnGenerarRecibo.Click += new System.EventHandler(this.btnGenerarRecibo_Click);
             // 
             // lblMontoTotal
             // 
             this.lblMontoTotal.AutoSize = true;
-            this.lblMontoTotal.Location = new System.Drawing.Point(179, 382);
+            this.lblMontoTotal.Location = new System.Drawing.Point(195, 382);
             this.lblMontoTotal.Name = "lblMontoTotal";
-            this.lblMontoTotal.Size = new System.Drawing.Size(49, 13);
+            this.lblMontoTotal.Size = new System.Drawing.Size(13, 13);
             this.lblMontoTotal.TabIndex = 42;
-            this.lblMontoTotal.Text = "S/.00.00";
+            this.lblMontoTotal.Text = "0";
             // 
-            // bunifuCustomLabel8
+            // lblMontoTotalSeleccionado
             // 
-            this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(262, 382);
-            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(171, 13);
-            this.bunifuCustomLabel8.TabIndex = 41;
-            this.bunifuCustomLabel8.Text = "MONTO TOTAL SELECCIONADO";
+            this.lblMontoTotalSeleccionado.AutoSize = true;
+            this.lblMontoTotalSeleccionado.Location = new System.Drawing.Point(245, 382);
+            this.lblMontoTotalSeleccionado.Name = "lblMontoTotalSeleccionado";
+            this.lblMontoTotalSeleccionado.Size = new System.Drawing.Size(189, 13);
+            this.lblMontoTotalSeleccionado.TabIndex = 41;
+            this.lblMontoTotalSeleccionado.Text = "MONTO TOTAL SELECCIONADO: S/";
             // 
-            // bunifuCustomLabel7
+            // lblSubTotal
             // 
-            this.bunifuCustomLabel7.AutoSize = true;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(439, 382);
-            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(49, 13);
-            this.bunifuCustomLabel7.TabIndex = 40;
-            this.bunifuCustomLabel7.Text = "S/.00.00";
+            this.lblSubTotal.AutoSize = true;
+            this.lblSubTotal.Location = new System.Drawing.Point(451, 382);
+            this.lblSubTotal.Name = "lblSubTotal";
+            this.lblSubTotal.Size = new System.Drawing.Size(13, 13);
+            this.lblSubTotal.TabIndex = 40;
+            this.lblSubTotal.Text = "0";
             // 
-            // bunifuCustomLabel5
+            // lblDeudaPendienteTotal
             // 
-            this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(9, 382);
-            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(148, 13);
-            this.bunifuCustomLabel5.TabIndex = 38;
-            this.bunifuCustomLabel5.Text = "DEUDA PENDIENTE TOTAL";
+            this.lblDeudaPendienteTotal.AutoSize = true;
+            this.lblDeudaPendienteTotal.Location = new System.Drawing.Point(9, 382);
+            this.lblDeudaPendienteTotal.Name = "lblDeudaPendienteTotal";
+            this.lblDeudaPendienteTotal.Size = new System.Drawing.Size(166, 13);
+            this.lblDeudaPendienteTotal.TabIndex = 38;
+            this.lblDeudaPendienteTotal.Text = "DEUDA PENDIENTE TOTAL: S/";
             // 
-            // bunifuCustomLabel4
+            // lblCuotaExtraordinaria
             // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(20, 220);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(217, 16);
-            this.bunifuCustomLabel4.TabIndex = 37;
-            this.bunifuCustomLabel4.Text = "CUOTAS EXTRAORDINARIAS";
+            this.lblCuotaExtraordinaria.AutoSize = true;
+            this.lblCuotaExtraordinaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCuotaExtraordinaria.Location = new System.Drawing.Point(20, 220);
+            this.lblCuotaExtraordinaria.Name = "lblCuotaExtraordinaria";
+            this.lblCuotaExtraordinaria.Size = new System.Drawing.Size(217, 16);
+            this.lblCuotaExtraordinaria.TabIndex = 37;
+            this.lblCuotaExtraordinaria.Text = "CUOTAS EXTRAORDINARIAS";
             // 
             // dgdDeudaExtraordinaria
             // 
             this.dgdDeudaExtraordinaria.AllowUserToAddRows = false;
             this.dgdDeudaExtraordinaria.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgdDeudaExtraordinaria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgdDeudaExtraordinaria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle27;
             this.dgdDeudaExtraordinaria.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgdDeudaExtraordinaria.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgdDeudaExtraordinaria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgdDeudaExtraordinaria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgdDeudaExtraordinaria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
             this.dgdDeudaExtraordinaria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgdDeudaExtraordinaria.DoubleBuffered = true;
             this.dgdDeudaExtraordinaria.EnableHeadersVisualStyles = false;
@@ -342,44 +341,46 @@
             this.dgdDeudaExtraordinaria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgdDeudaExtraordinaria.Size = new System.Drawing.Size(476, 118);
             this.dgdDeudaExtraordinaria.TabIndex = 36;
+            this.dgdDeudaExtraordinaria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgdDeudaExtraordinaria_CellContentClick);
+            this.dgdDeudaExtraordinaria.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgdDeudaExtraordinaria_CellValueChanged);
             // 
-            // bunifuCustomLabel3
+            // lblDeudaPendiente
             // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(262, 12);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(172, 16);
-            this.bunifuCustomLabel3.TabIndex = 35;
-            this.bunifuCustomLabel3.Text = "DEUDAS PENDIENTES";
+            this.lblDeudaPendiente.AutoSize = true;
+            this.lblDeudaPendiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeudaPendiente.Location = new System.Drawing.Point(262, 12);
+            this.lblDeudaPendiente.Name = "lblDeudaPendiente";
+            this.lblDeudaPendiente.Size = new System.Drawing.Size(172, 16);
+            this.lblDeudaPendiente.TabIndex = 35;
+            this.lblDeudaPendiente.Text = "DEUDAS PENDIENTES";
             // 
-            // bunifuCustomLabel2
+            // lblMensualidad
             // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(20, 68);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(136, 16);
-            this.bunifuCustomLabel2.TabIndex = 34;
-            this.bunifuCustomLabel2.Text = "MENSUALIDADES";
+            this.lblMensualidad.AutoSize = true;
+            this.lblMensualidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMensualidad.Location = new System.Drawing.Point(20, 68);
+            this.lblMensualidad.Name = "lblMensualidad";
+            this.lblMensualidad.Size = new System.Drawing.Size(136, 16);
+            this.lblMensualidad.TabIndex = 34;
+            this.lblMensualidad.Text = "MENSUALIDADES";
             // 
             // dgdDeudaMensualidad
             // 
             this.dgdDeudaMensualidad.AllowUserToAddRows = false;
             this.dgdDeudaMensualidad.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgdDeudaMensualidad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgdDeudaMensualidad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
             this.dgdDeudaMensualidad.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgdDeudaMensualidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgdDeudaMensualidad.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgdDeudaMensualidad.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgdDeudaMensualidad.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
             this.dgdDeudaMensualidad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgdDeudaMensualidad.DoubleBuffered = true;
             this.dgdDeudaMensualidad.EnableHeadersVisualStyles = false;
@@ -393,120 +394,104 @@
             this.dgdDeudaMensualidad.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgdDeudaMensualidad_CellContentClick);
             this.dgdDeudaMensualidad.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgdDeudaMensualidad_CellValueChanged);
             // 
-            // bunifuGradientPanel2
+            // pnlDeudaPagada
             // 
-            this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
-            this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomLabel1);
-            this.bunifuGradientPanel2.Controls.Add(this.cmbEstado);
-            this.bunifuGradientPanel2.Controls.Add(this.bunifuCustomDataGrid1);
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(12, 341);
-            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
-            this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(400, 221);
-            this.bunifuGradientPanel2.TabIndex = 32;
+            this.pnlDeudaPagada.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlDeudaPagada.BackgroundImage")));
+            this.pnlDeudaPagada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlDeudaPagada.Controls.Add(this.lblDeudaPagada);
+            this.pnlDeudaPagada.Controls.Add(this.cmbFiltrarDeudaPago);
+            this.pnlDeudaPagada.Controls.Add(this.dgdDeudaPago);
+            this.pnlDeudaPagada.GradientBottomLeft = System.Drawing.Color.White;
+            this.pnlDeudaPagada.GradientBottomRight = System.Drawing.Color.White;
+            this.pnlDeudaPagada.GradientTopLeft = System.Drawing.Color.White;
+            this.pnlDeudaPagada.GradientTopRight = System.Drawing.Color.White;
+            this.pnlDeudaPagada.Location = new System.Drawing.Point(12, 341);
+            this.pnlDeudaPagada.Name = "pnlDeudaPagada";
+            this.pnlDeudaPagada.Quality = 10;
+            this.pnlDeudaPagada.Size = new System.Drawing.Size(400, 221);
+            this.pnlDeudaPagada.TabIndex = 32;
             // 
-            // bunifuCustomLabel1
+            // lblDeudaPagada
             // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(118, 15);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(147, 16);
-            this.bunifuCustomLabel1.TabIndex = 33;
-            this.bunifuCustomLabel1.Text = "DEUDAS PAGADAS";
+            this.lblDeudaPagada.AutoSize = true;
+            this.lblDeudaPagada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeudaPagada.Location = new System.Drawing.Point(118, 15);
+            this.lblDeudaPagada.Name = "lblDeudaPagada";
+            this.lblDeudaPagada.Size = new System.Drawing.Size(147, 16);
+            this.lblDeudaPagada.TabIndex = 33;
+            this.lblDeudaPagada.Text = "DEUDAS PAGADAS";
             // 
-            // cmbEstado
+            // cmbFiltrarDeudaPago
             // 
-            this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Location = new System.Drawing.Point(23, 60);
-            this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(132, 21);
-            this.cmbEstado.TabIndex = 28;
-            this.cmbEstado.Text = "FILTRAR POR..";
+            this.cmbFiltrarDeudaPago.FormattingEnabled = true;
+            this.cmbFiltrarDeudaPago.Location = new System.Drawing.Point(23, 60);
+            this.cmbFiltrarDeudaPago.Name = "cmbFiltrarDeudaPago";
+            this.cmbFiltrarDeudaPago.Size = new System.Drawing.Size(132, 21);
+            this.cmbFiltrarDeudaPago.TabIndex = 28;
+            this.cmbFiltrarDeudaPago.Text = "FILTRAR POR..";
             // 
-            // bunifuCustomDataGrid1
+            // dgdDeudaPago
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(23, 87);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(345, 79);
-            this.bunifuCustomDataGrid1.TabIndex = 30;
+            this.dgdDeudaPago.AllowUserToAddRows = false;
+            this.dgdDeudaPago.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgdDeudaPago.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
+            this.dgdDeudaPago.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgdDeudaPago.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgdDeudaPago.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgdDeudaPago.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            this.dgdDeudaPago.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgdDeudaPago.DoubleBuffered = true;
+            this.dgdDeudaPago.EnableHeadersVisualStyles = false;
+            this.dgdDeudaPago.HeaderBgColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgdDeudaPago.HeaderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgdDeudaPago.Location = new System.Drawing.Point(23, 87);
+            this.dgdDeudaPago.Name = "dgdDeudaPago";
+            this.dgdDeudaPago.ReadOnly = true;
+            this.dgdDeudaPago.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgdDeudaPago.Size = new System.Drawing.Size(345, 79);
+            this.dgdDeudaPago.TabIndex = 30;
             // 
-            // dataGridViewTextBoxColumn1
+            // pnlAlumno
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "AÑO";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "DESCRIPCIÓN";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "MONTO";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // bunifuGradientPanel1
-            // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.dgdAlumno);
-            this.bunifuGradientPanel1.Controls.Add(this.txtBuscar);
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(12, 102);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(400, 205);
-            this.bunifuGradientPanel1.TabIndex = 31;
+            this.pnlAlumno.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlAlumno.BackgroundImage")));
+            this.pnlAlumno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlAlumno.Controls.Add(this.dgdAlumno);
+            this.pnlAlumno.Controls.Add(this.txtBuscar);
+            this.pnlAlumno.GradientBottomLeft = System.Drawing.Color.White;
+            this.pnlAlumno.GradientBottomRight = System.Drawing.Color.White;
+            this.pnlAlumno.GradientTopLeft = System.Drawing.Color.White;
+            this.pnlAlumno.GradientTopRight = System.Drawing.Color.White;
+            this.pnlAlumno.Location = new System.Drawing.Point(12, 102);
+            this.pnlAlumno.Name = "pnlAlumno";
+            this.pnlAlumno.Quality = 10;
+            this.pnlAlumno.Size = new System.Drawing.Size(400, 205);
+            this.pnlAlumno.TabIndex = 31;
             // 
             // dgdAlumno
             // 
             this.dgdAlumno.AllowUserToAddRows = false;
             this.dgdAlumno.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgdAlumno.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgdAlumno.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
             this.dgdAlumno.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgdAlumno.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgdAlumno.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgdAlumno.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgdAlumno.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.dgdAlumno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgdAlumno.DoubleBuffered = true;
             this.dgdAlumno.EnableHeadersVisualStyles = false;
@@ -542,27 +527,28 @@
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1022, 722);
             this.Controls.Add(this.pnlGenerarFormatoRecibo);
-            this.Controls.Add(this.bunifuGradientPanel4);
-            this.Controls.Add(this.bunifuGradientPanel3);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.bunifuGradientPanel2);
-            this.Controls.Add(this.bunifuGradientPanel1);
+            this.Controls.Add(this.pnlReciboGenerado);
+            this.Controls.Add(this.pnlDeudaPendiente);
+            this.Controls.Add(this.cmbTareas);
+            this.Controls.Add(this.pnlDeudaPagada);
+            this.Controls.Add(this.pnlAlumno);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "gstFrmGenerarFormatoRecibo";
             this.Text = "gstFrmDeudasPendientes";
+            this.Load += new System.EventHandler(this.gstFrmGenerarFormatoRecibo_Load);
             this.pnlGenerarFormatoRecibo.ResumeLayout(false);
             this.pnlGenerarFormatoRecibo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            this.bunifuGradientPanel4.ResumeLayout(false);
-            this.bunifuGradientPanel4.PerformLayout();
-            this.bunifuGradientPanel3.ResumeLayout(false);
-            this.bunifuGradientPanel3.PerformLayout();
+            this.pnlReciboGenerado.ResumeLayout(false);
+            this.pnlReciboGenerado.PerformLayout();
+            this.pnlDeudaPendiente.ResumeLayout(false);
+            this.pnlDeudaPendiente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgdDeudaExtraordinaria)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgdDeudaMensualidad)).EndInit();
-            this.bunifuGradientPanel2.ResumeLayout(false);
-            this.bunifuGradientPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
-            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.pnlDeudaPagada.ResumeLayout(false);
+            this.pnlDeudaPagada.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgdDeudaPago)).EndInit();
+            this.pnlAlumno.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgdAlumno)).EndInit();
             this.ResumeLayout(false);
 
@@ -573,37 +559,34 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgdAlumno;
         private Bunifu.Framework.UI.BunifuTextbox txtBuscar;
-        private System.Windows.Forms.ComboBox cmbEstado;
-        private Bunifu.Framework.UI.BunifuCustomLabel lblApellido;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel4;
-        private System.Windows.Forms.Button button2;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cmbFiltrarDeudaPago;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblTitulo;
+        private Bunifu.Framework.UI.BunifuGradientPanel pnlReciboGenerado;
+        private System.Windows.Forms.Button btnVisualizarImprimir;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblRecibo;
+        private System.Windows.Forms.ComboBox cmbReciboGenerado;
+        private Bunifu.Framework.UI.BunifuGradientPanel pnlDeudaPendiente;
+        private System.Windows.Forms.Button btnGenerarRecibo;
         private Bunifu.Framework.UI.BunifuCustomLabel lblMontoTotal;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblMontoTotalSeleccionado;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblSubTotal;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblDeudaPendienteTotal;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblCuotaExtraordinaria;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgdDeudaExtraordinaria;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblDeudaPendiente;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblMensualidad;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgdDeudaMensualidad;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
+        private System.Windows.Forms.ComboBox cmbTareas;
+        private Bunifu.Framework.UI.BunifuGradientPanel pnlDeudaPagada;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblDeudaPagada;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dgdDeudaPago;
+        private Bunifu.Framework.UI.BunifuGradientPanel pnlAlumno;
         private System.Windows.Forms.Panel pnlGenerarFormatoRecibo;
         private Bunifu.Framework.UI.BunifuImageButton btnCerrar;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnEliminarRecibo;
         private Bunifu.Framework.UI.BunifuCustomLabel lblNombreApellidoAlumno;
         private Bunifu.Framework.UI.BunifuCustomLabel lblCodigoAlumno;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblNombres;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblCodigo;
     }
 }

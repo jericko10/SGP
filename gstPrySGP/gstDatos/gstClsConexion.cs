@@ -14,6 +14,7 @@ namespace gstDatos
             try
             {
                 SqlConnection LobjConexion = new SqlConnection("server=LUISEDUARDO; database=gstPago; user id=usuario; password = 123; integrated security = true");
+                LobjConexion.Open();
                 return LobjConexion;
             }
             catch (Exception LobjExcepcion)

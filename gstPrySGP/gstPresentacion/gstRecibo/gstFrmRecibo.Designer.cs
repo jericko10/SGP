@@ -29,35 +29,31 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox2 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox3 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox4 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox5 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox6 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox7 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.clnAnio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnDescriopcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnApellidosNombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnSubtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bunifuCustomTextbox8 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lblAlumno = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblNivel = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblSeccion = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblGrado = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblEstado = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtEstado = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtSeccion = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtGrado = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtNivel = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtAlumno = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtCodigoAlumno = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtCodigoRecibo = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.lblCodigoRecibo = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblCodigoAlumno = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.dgdRecibo = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.txtTotal = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.lblTotal = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.btnImprimir = new System.Windows.Forms.Button();
             this.pnlRecibo = new System.Windows.Forms.Panel();
-            this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblTitulo = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnCerrar = new Bunifu.Framework.UI.BunifuImageButton();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgdRecibo)).BeginInit();
             this.pnlRecibo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
@@ -67,217 +63,204 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // bunifuCustomLabel2
+            // lblAlumno
             // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(50, 69);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(53, 13);
-            this.bunifuCustomLabel2.TabIndex = 1;
-            this.bunifuCustomLabel2.Text = "ALUMNO";
+            this.lblAlumno.AutoSize = true;
+            this.lblAlumno.Location = new System.Drawing.Point(50, 69);
+            this.lblAlumno.Name = "lblAlumno";
+            this.lblAlumno.Size = new System.Drawing.Size(53, 13);
+            this.lblAlumno.TabIndex = 1;
+            this.lblAlumno.Text = "ALUMNO";
             // 
-            // bunifuCustomLabel3
+            // lblNivel
             // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(50, 122);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(38, 13);
-            this.bunifuCustomLabel3.TabIndex = 2;
-            this.bunifuCustomLabel3.Text = "NIVEL";
+            this.lblNivel.AutoSize = true;
+            this.lblNivel.Location = new System.Drawing.Point(50, 122);
+            this.lblNivel.Name = "lblNivel";
+            this.lblNivel.Size = new System.Drawing.Size(38, 13);
+            this.lblNivel.TabIndex = 2;
+            this.lblNivel.Text = "NIVEL";
             // 
-            // bunifuCustomLabel4
+            // lblSeccion
             // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(188, 185);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(54, 13);
-            this.bunifuCustomLabel4.TabIndex = 3;
-            this.bunifuCustomLabel4.Text = "SECCIÓN";
-            this.bunifuCustomLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblSeccion.AutoSize = true;
+            this.lblSeccion.Location = new System.Drawing.Point(188, 185);
+            this.lblSeccion.Name = "lblSeccion";
+            this.lblSeccion.Size = new System.Drawing.Size(54, 13);
+            this.lblSeccion.TabIndex = 3;
+            this.lblSeccion.Text = "SECCIÓN";
+            this.lblSeccion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // bunifuCustomLabel5
+            // lblGrado
             // 
-            this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(50, 185);
-            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(46, 13);
-            this.bunifuCustomLabel5.TabIndex = 4;
-            this.bunifuCustomLabel5.Text = "GRADO";
-            this.bunifuCustomLabel5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblGrado.AutoSize = true;
+            this.lblGrado.Location = new System.Drawing.Point(50, 185);
+            this.lblGrado.Name = "lblGrado";
+            this.lblGrado.Size = new System.Drawing.Size(46, 13);
+            this.lblGrado.TabIndex = 4;
+            this.lblGrado.Text = "GRADO";
+            this.lblGrado.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // bunifuCustomLabel6
+            // lblEstado
             // 
-            this.bunifuCustomLabel6.AutoSize = true;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(50, 245);
-            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(51, 13);
-            this.bunifuCustomLabel6.TabIndex = 5;
-            this.bunifuCustomLabel6.Text = "ESTADO";
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Location = new System.Drawing.Point(50, 245);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(51, 13);
+            this.lblEstado.TabIndex = 5;
+            this.lblEstado.Text = "ESTADO";
             // 
-            // bunifuCustomTextbox1
+            // txtEstado
             // 
-            this.bunifuCustomTextbox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(53, 270);
-            this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(122, 20);
-            this.bunifuCustomTextbox1.TabIndex = 6;
+            this.txtEstado.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtEstado.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtEstado.Enabled = false;
+            this.txtEstado.Location = new System.Drawing.Point(53, 270);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(122, 20);
+            this.txtEstado.TabIndex = 6;
             // 
-            // bunifuCustomTextbox2
+            // txtSeccion
             // 
-            this.bunifuCustomTextbox2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.bunifuCustomTextbox2.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(191, 201);
-            this.bunifuCustomTextbox2.Name = "bunifuCustomTextbox2";
-            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(96, 20);
-            this.bunifuCustomTextbox2.TabIndex = 7;
+            this.txtSeccion.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtSeccion.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtSeccion.Enabled = false;
+            this.txtSeccion.Location = new System.Drawing.Point(191, 201);
+            this.txtSeccion.Name = "txtSeccion";
+            this.txtSeccion.Size = new System.Drawing.Size(96, 20);
+            this.txtSeccion.TabIndex = 7;
             // 
-            // bunifuCustomTextbox3
+            // txtGrado
             // 
-            this.bunifuCustomTextbox3.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.bunifuCustomTextbox3.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox3.Location = new System.Drawing.Point(53, 201);
-            this.bunifuCustomTextbox3.Name = "bunifuCustomTextbox3";
-            this.bunifuCustomTextbox3.Size = new System.Drawing.Size(93, 20);
-            this.bunifuCustomTextbox3.TabIndex = 8;
+            this.txtGrado.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtGrado.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtGrado.Enabled = false;
+            this.txtGrado.Location = new System.Drawing.Point(53, 201);
+            this.txtGrado.Name = "txtGrado";
+            this.txtGrado.Size = new System.Drawing.Size(93, 20);
+            this.txtGrado.TabIndex = 8;
             // 
-            // bunifuCustomTextbox4
+            // txtNivel
             // 
-            this.bunifuCustomTextbox4.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.bunifuCustomTextbox4.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(53, 138);
-            this.bunifuCustomTextbox4.Name = "bunifuCustomTextbox4";
-            this.bunifuCustomTextbox4.Size = new System.Drawing.Size(155, 20);
-            this.bunifuCustomTextbox4.TabIndex = 9;
+            this.txtNivel.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtNivel.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtNivel.Enabled = false;
+            this.txtNivel.Location = new System.Drawing.Point(53, 138);
+            this.txtNivel.Name = "txtNivel";
+            this.txtNivel.Size = new System.Drawing.Size(155, 20);
+            this.txtNivel.TabIndex = 9;
             // 
-            // bunifuCustomTextbox5
+            // txtAlumno
             // 
-            this.bunifuCustomTextbox5.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.bunifuCustomTextbox5.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox5.Location = new System.Drawing.Point(53, 85);
-            this.bunifuCustomTextbox5.Name = "bunifuCustomTextbox5";
-            this.bunifuCustomTextbox5.Size = new System.Drawing.Size(234, 20);
-            this.bunifuCustomTextbox5.TabIndex = 10;
+            this.txtAlumno.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtAlumno.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtAlumno.Enabled = false;
+            this.txtAlumno.Location = new System.Drawing.Point(53, 85);
+            this.txtAlumno.Name = "txtAlumno";
+            this.txtAlumno.Size = new System.Drawing.Size(234, 20);
+            this.txtAlumno.TabIndex = 10;
             // 
-            // bunifuCustomTextbox6
+            // txtCodigoAlumno
             // 
-            this.bunifuCustomTextbox6.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.bunifuCustomTextbox6.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox6.Location = new System.Drawing.Point(365, 85);
-            this.bunifuCustomTextbox6.Name = "bunifuCustomTextbox6";
-            this.bunifuCustomTextbox6.Size = new System.Drawing.Size(155, 20);
-            this.bunifuCustomTextbox6.TabIndex = 14;
+            this.txtCodigoAlumno.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCodigoAlumno.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtCodigoAlumno.Enabled = false;
+            this.txtCodigoAlumno.Location = new System.Drawing.Point(365, 85);
+            this.txtCodigoAlumno.Name = "txtCodigoAlumno";
+            this.txtCodigoAlumno.Size = new System.Drawing.Size(155, 20);
+            this.txtCodigoAlumno.TabIndex = 14;
             // 
-            // bunifuCustomTextbox7
+            // txtCodigoRecibo
             // 
-            this.bunifuCustomTextbox7.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.bunifuCustomTextbox7.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox7.Location = new System.Drawing.Point(365, 138);
-            this.bunifuCustomTextbox7.Name = "bunifuCustomTextbox7";
-            this.bunifuCustomTextbox7.Size = new System.Drawing.Size(155, 20);
-            this.bunifuCustomTextbox7.TabIndex = 13;
+            this.txtCodigoRecibo.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCodigoRecibo.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtCodigoRecibo.Enabled = false;
+            this.txtCodigoRecibo.Location = new System.Drawing.Point(365, 138);
+            this.txtCodigoRecibo.Name = "txtCodigoRecibo";
+            this.txtCodigoRecibo.Size = new System.Drawing.Size(155, 20);
+            this.txtCodigoRecibo.TabIndex = 13;
             // 
-            // bunifuCustomLabel7
+            // lblCodigoRecibo
             // 
-            this.bunifuCustomLabel7.AutoSize = true;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(362, 122);
-            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(110, 13);
-            this.bunifuCustomLabel7.TabIndex = 12;
-            this.bunifuCustomLabel7.Text = "CÓDIGO DE RECIBO";
+            this.lblCodigoRecibo.AutoSize = true;
+            this.lblCodigoRecibo.Location = new System.Drawing.Point(362, 122);
+            this.lblCodigoRecibo.Name = "lblCodigoRecibo";
+            this.lblCodigoRecibo.Size = new System.Drawing.Size(110, 13);
+            this.lblCodigoRecibo.TabIndex = 12;
+            this.lblCodigoRecibo.Text = "CÓDIGO DE RECIBO";
             // 
-            // bunifuCustomLabel8
+            // lblCodigoAlumno
             // 
-            this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(362, 69);
-            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(116, 13);
-            this.bunifuCustomLabel8.TabIndex = 11;
-            this.bunifuCustomLabel8.Text = "CÓDIGO DE ALUMNO";
+            this.lblCodigoAlumno.AutoSize = true;
+            this.lblCodigoAlumno.Location = new System.Drawing.Point(362, 69);
+            this.lblCodigoAlumno.Name = "lblCodigoAlumno";
+            this.lblCodigoAlumno.Size = new System.Drawing.Size(116, 13);
+            this.lblCodigoAlumno.TabIndex = 11;
+            this.lblCodigoAlumno.Text = "CÓDIGO DE ALUMNO";
             // 
-            // bunifuCustomDataGrid1
+            // dgdRecibo
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clnAnio,
-            this.clnDescriopcion,
-            this.clnApellidosNombres,
-            this.clnSubtotal});
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.PowderBlue;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(64, 320);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(456, 103);
-            this.bunifuCustomDataGrid1.TabIndex = 15;
+            this.dgdRecibo.AllowUserToAddRows = false;
+            this.dgdRecibo.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgdRecibo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgdRecibo.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgdRecibo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgdRecibo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgdRecibo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgdRecibo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgdRecibo.DoubleBuffered = true;
+            this.dgdRecibo.EnableHeadersVisualStyles = false;
+            this.dgdRecibo.HeaderBgColor = System.Drawing.Color.PowderBlue;
+            this.dgdRecibo.HeaderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgdRecibo.Location = new System.Drawing.Point(53, 320);
+            this.dgdRecibo.Name = "dgdRecibo";
+            this.dgdRecibo.ReadOnly = true;
+            this.dgdRecibo.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgdRecibo.Size = new System.Drawing.Size(467, 103);
+            this.dgdRecibo.TabIndex = 15;
             // 
-            // clnAnio
+            // txtTotal
             // 
-            this.clnAnio.HeaderText = "AÑO";
-            this.clnAnio.Name = "clnAnio";
+            this.txtTotal.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtTotal.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtTotal.Enabled = false;
+            this.txtTotal.Location = new System.Drawing.Point(424, 442);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(96, 20);
+            this.txtTotal.TabIndex = 17;
             // 
-            // clnDescriopcion
+            // lblTotal
             // 
-            this.clnDescriopcion.HeaderText = "DESCRIPCIÓN";
-            this.clnDescriopcion.Name = "clnDescriopcion";
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(362, 449);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(45, 13);
+            this.lblTotal.TabIndex = 16;
+            this.lblTotal.Text = "TOTAL:";
+            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // clnApellidosNombres
+            // btnImprimir
             // 
-            this.clnApellidosNombres.HeaderText = "APELLIDOS Y NOMBRES";
-            this.clnApellidosNombres.Name = "clnApellidosNombres";
-            // 
-            // clnSubtotal
-            // 
-            this.clnSubtotal.HeaderText = "SUBTOTAL";
-            this.clnSubtotal.Name = "clnSubtotal";
-            // 
-            // bunifuCustomTextbox8
-            // 
-            this.bunifuCustomTextbox8.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.bunifuCustomTextbox8.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox8.Location = new System.Drawing.Point(424, 442);
-            this.bunifuCustomTextbox8.Name = "bunifuCustomTextbox8";
-            this.bunifuCustomTextbox8.Size = new System.Drawing.Size(96, 20);
-            this.bunifuCustomTextbox8.TabIndex = 17;
-            // 
-            // bunifuCustomLabel9
-            // 
-            this.bunifuCustomLabel9.AutoSize = true;
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(362, 449);
-            this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(45, 13);
-            this.bunifuCustomLabel9.TabIndex = 16;
-            this.bunifuCustomLabel9.Text = "TOTAL:";
-            this.bunifuCustomLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(435, 481);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "IMPRIMIR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnImprimir.Location = new System.Drawing.Point(435, 481);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(75, 23);
+            this.btnImprimir.TabIndex = 18;
+            this.btnImprimir.Text = "IMPRIMIR";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // pnlRecibo
             // 
             this.pnlRecibo.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.pnlRecibo.Controls.Add(this.bunifuCustomLabel10);
+            this.pnlRecibo.Controls.Add(this.lblTitulo);
             this.pnlRecibo.Controls.Add(this.btnCerrar);
             this.pnlRecibo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlRecibo.Location = new System.Drawing.Point(0, 0);
@@ -289,16 +272,16 @@
             this.pnlRecibo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlRecibo_MouseMove);
             this.pnlRecibo.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlRecibo_MouseUp);
             // 
-            // bunifuCustomLabel10
+            // lblTitulo
             // 
-            this.bunifuCustomLabel10.AutoSize = true;
-            this.bunifuCustomLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(25, 9);
-            this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
-            this.bunifuCustomLabel10.Size = new System.Drawing.Size(64, 16);
-            this.bunifuCustomLabel10.TabIndex = 31;
-            this.bunifuCustomLabel10.Text = "RECIBO";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblTitulo.Location = new System.Drawing.Point(25, 9);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(64, 16);
+            this.lblTitulo.TabIndex = 31;
+            this.lblTitulo.Text = "RECIBO";
             // 
             // btnCerrar
             // 
@@ -324,29 +307,30 @@
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(566, 520);
             this.Controls.Add(this.pnlRecibo);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.bunifuCustomTextbox8);
-            this.Controls.Add(this.bunifuCustomLabel9);
-            this.Controls.Add(this.bunifuCustomDataGrid1);
-            this.Controls.Add(this.bunifuCustomTextbox6);
-            this.Controls.Add(this.bunifuCustomTextbox7);
-            this.Controls.Add(this.bunifuCustomLabel7);
-            this.Controls.Add(this.bunifuCustomLabel8);
-            this.Controls.Add(this.bunifuCustomTextbox5);
-            this.Controls.Add(this.bunifuCustomTextbox4);
-            this.Controls.Add(this.bunifuCustomTextbox3);
-            this.Controls.Add(this.bunifuCustomTextbox2);
-            this.Controls.Add(this.bunifuCustomTextbox1);
-            this.Controls.Add(this.bunifuCustomLabel6);
-            this.Controls.Add(this.bunifuCustomLabel5);
-            this.Controls.Add(this.bunifuCustomLabel4);
-            this.Controls.Add(this.bunifuCustomLabel3);
-            this.Controls.Add(this.bunifuCustomLabel2);
+            this.Controls.Add(this.btnImprimir);
+            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.dgdRecibo);
+            this.Controls.Add(this.txtCodigoAlumno);
+            this.Controls.Add(this.txtCodigoRecibo);
+            this.Controls.Add(this.lblCodigoRecibo);
+            this.Controls.Add(this.lblCodigoAlumno);
+            this.Controls.Add(this.txtAlumno);
+            this.Controls.Add(this.txtNivel);
+            this.Controls.Add(this.txtGrado);
+            this.Controls.Add(this.txtSeccion);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.lblEstado);
+            this.Controls.Add(this.lblGrado);
+            this.Controls.Add(this.lblSeccion);
+            this.Controls.Add(this.lblNivel);
+            this.Controls.Add(this.lblAlumno);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "gstFrmRecibo";
             this.Text = "gstFrmRecibo";
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
+            this.Load += new System.EventHandler(this.gstFrmRecibo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgdRecibo)).EndInit();
             this.pnlRecibo.ResumeLayout(false);
             this.pnlRecibo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
@@ -358,30 +342,26 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox8;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnAnio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnDescriopcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnApellidosNombres;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clnSubtotal;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox6;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox7;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox5;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox4;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox3;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox2;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
-        private System.Windows.Forms.Button button1;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblEstado;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblGrado;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblSeccion;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblNivel;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblAlumno;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtTotal;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblTotal;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dgdRecibo;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtCodigoAlumno;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtCodigoRecibo;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblCodigoRecibo;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblCodigoAlumno;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtAlumno;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtNivel;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtGrado;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtSeccion;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtEstado;
+        private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Panel pnlRecibo;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblTitulo;
         private Bunifu.Framework.UI.BunifuImageButton btnCerrar;
     }
 }
