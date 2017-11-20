@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gstFrmGestionarConcepto));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlGestionarConcepto = new System.Windows.Forms.Panel();
+            this.btnCerrarFormulario = new Bunifu.Framework.UI.BunifuImageButton();
             this.lblTitulo = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnCerrar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnCerrarFormulario = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtDescripcion = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.lblDescripcion = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblMonto = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -46,8 +46,8 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.txtMonto = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.pnlGestionarConcepto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrarFormulario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgdConcepto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +62,27 @@
             this.pnlGestionarConcepto.Name = "pnlGestionarConcepto";
             this.pnlGestionarConcepto.Size = new System.Drawing.Size(672, 32);
             this.pnlGestionarConcepto.TabIndex = 32;
+            this.pnlGestionarConcepto.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGestionarConcepto_Paint);
+            this.pnlGestionarConcepto.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlGestionarConcepto_MouseDown);
+            this.pnlGestionarConcepto.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlGestionarConcepto_MouseMove);
+            this.pnlGestionarConcepto.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlGestionarConcepto_MouseUp);
+            // 
+            // btnCerrarFormulario
+            // 
+            this.btnCerrarFormulario.BackColor = System.Drawing.Color.Transparent;
+            this.btnCerrarFormulario.BackgroundImage = global::gstPresentacion.Properties.Resources.close_1540630_960_720;
+            this.btnCerrarFormulario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCerrarFormulario.Image = global::gstPresentacion.Properties.Resources.close_1540630_960_720;
+            this.btnCerrarFormulario.ImageActive = null;
+            this.btnCerrarFormulario.Location = new System.Drawing.Point(636, 0);
+            this.btnCerrarFormulario.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCerrarFormulario.Name = "btnCerrarFormulario";
+            this.btnCerrarFormulario.Size = new System.Drawing.Size(36, 29);
+            this.btnCerrarFormulario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrarFormulario.TabIndex = 32;
+            this.btnCerrarFormulario.TabStop = false;
+            this.btnCerrarFormulario.Zoom = 10;
+            this.btnCerrarFormulario.Click += new System.EventHandler(this.btnCerrarFormulario_Click);
             // 
             // lblTitulo
             // 
@@ -88,23 +109,6 @@
             this.btnCerrar.TabIndex = 31;
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Zoom = 10;
-            // 
-            // btnCerrarFormulario
-            // 
-            this.btnCerrarFormulario.BackColor = System.Drawing.Color.Transparent;
-            this.btnCerrarFormulario.BackgroundImage = global::gstPresentacion.Properties.Resources.close_1540630_960_720;
-            this.btnCerrarFormulario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCerrarFormulario.Image = global::gstPresentacion.Properties.Resources.close_1540630_960_720;
-            this.btnCerrarFormulario.ImageActive = null;
-            this.btnCerrarFormulario.Location = new System.Drawing.Point(636, 0);
-            this.btnCerrarFormulario.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCerrarFormulario.Name = "btnCerrarFormulario";
-            this.btnCerrarFormulario.Size = new System.Drawing.Size(36, 29);
-            this.btnCerrarFormulario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrarFormulario.TabIndex = 32;
-            this.btnCerrarFormulario.TabStop = false;
-            this.btnCerrarFormulario.Zoom = 10;
-            this.btnCerrarFormulario.Click += new System.EventHandler(this.btnCerrarFormulario_Click);
             // 
             // txtDescripcion
             // 
@@ -174,19 +178,19 @@
             // 
             this.dgdConcepto.AllowUserToAddRows = false;
             this.dgdConcepto.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgdConcepto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgdConcepto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgdConcepto.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgdConcepto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgdConcepto.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgdConcepto.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgdConcepto.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgdConcepto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgdConcepto.DoubleBuffered = true;
             this.dgdConcepto.EnableHeadersVisualStyles = false;
@@ -253,8 +257,8 @@
             this.Load += new System.EventHandler(this.gstFrmGestionarConcepto_Load);
             this.pnlGestionarConcepto.ResumeLayout(false);
             this.pnlGestionarConcepto.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrarFormulario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgdConcepto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

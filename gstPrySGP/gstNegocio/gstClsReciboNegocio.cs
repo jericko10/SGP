@@ -58,5 +58,10 @@ namespace gstNegocio
         {
             return GobjRecibo.mtdEliminarRecibo(LintCodigoAlumno);
         }
+
+        public DataTable mtdFiltrarDeudaPago(string LstrParametro, int LintCodigoAlumno)
+        {
+            return GobjRecibo.mtdFiltrarDeudaPago(LstrParametro, LintCodigoAlumno);
+        }
     }
 }

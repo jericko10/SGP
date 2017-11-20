@@ -293,12 +293,16 @@ namespace gstPresentacion
             {
                 cmbReciboGenerado.Items.Add(LobjRegistro);
             }
-            cmbReciboGenerado.SelectedIndex = 0;
+
+            if(cmbReciboGenerado.Items.Count != 0)
+            {
+                cmbReciboGenerado.SelectedIndex = 0;
+            }
         }
 
         private void btnVisualizarImprimir_Click(object sender, EventArgs e)
         {
-            if (cmbReciboGenerado.Text != "RECIBOS GENERADOS" && lblCodigoAlumno.Text != "")
+            if (cmbReciboGenerado.Text != "RECIBOS GENERADOS" && cmbReciboGenerado.Text != "" && lblCodigoAlumno.Text != "")
             {
                 gstFrmRecibo frmRecibo = new gstFrmRecibo();
                 string[] LstrCodigoRecibo = cmbReciboGenerado.Text.Split('-');
@@ -318,6 +322,7 @@ namespace gstPresentacion
         private void gstFrmGenerarFormatoRecibo_Load(object sender, EventArgs e)
         {
             cmbFiltrarDeudaPago.Items.Clear();
+            cmbFiltrarDeudaPago.Items.Add("Todo");
             cmbFiltrarDeudaPago.Items.Add("APAFA");
             cmbFiltrarDeudaPago.Items.Add("Mensualidad");
             cmbFiltrarDeudaPago.Items.Add("Cuota Extraordinaria");
@@ -362,6 +367,18 @@ namespace gstPresentacion
             var LobjAlumno = LobjRecibo.mtdBuscarAlumno(txtBuscar.text);
 
             dgdAlumno.DataSource = LobjAlumno;
+        }
+
+        private void cmbFiltrarDeudaPago_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(lblCodigoAlumno.Text != "")
+            {
+                gstClsReciboNegocio LobjReciboNegocio = new gstClsReciboNegocio();
+
+                var LobjReciboDeudaPago = LobjReciboNegocio.mtdFiltrarDeudaPago(cmbFiltrarDeudaPago.Text, Convert.ToInt32(lblCodigoAlumno.Text));
+
+                dgdDeudaPago.DataSource = LobjReciboDeudaPago;
+            }
         }
     }
 }

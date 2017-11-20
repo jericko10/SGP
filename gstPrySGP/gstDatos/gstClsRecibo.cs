@@ -198,5 +198,31 @@ namespace gstDatos
             LobjConexion.Conectar().Close();
             return LintRespuesta;
         }
+
+        public DataTable mtdFiltrarDeudaPago(string LstrParametro, int LintCodigoAlumno)
+        {
+            if(LstrParametro.Equals("Todo"))
+            {
+                string LstrComando = "select gstDEUtDeuda.DEUcodigo as CÓDIGO, YEAR(gstCUOtCuota.CUOano) as AÑO, gstDEUtDeuda.DEUdescripcion as DESCRIPCIÓN, gstDEUtDeuda.DEUmonto as MONTO from gstDEUtDeuda inner join gstCUOtCuota on gstDEUtDeuda.CUOcodigo = gstCUOtCuota.CUOcodigo inner join gstCONpConcepto on gstCUOtCuota.CONcodigo = gstCONpConcepto.CONcodigo where gstDEUtDeuda.ALMcodigo = " + LintCodigoAlumno + " AND gstDEUtDeuda.DEUcodigo not in (select DEUcodigo from gstEXOtExoneracion) AND gstDEUtDeuda.DEUcodigo in (select DEUcodigo from gstDPGtDeudaPago)";
+
+                SqlDataAdapter LobjAdaptador = new SqlDataAdapter(LstrComando, LobjConexion.Conectar());
+                DataTable LobjDataTable = new DataTable();
+                LobjAdaptador.Fill(LobjDataTable);
+                LobjConexion.Conectar().Close();
+
+                return LobjDataTable;
+            }
+            else
+            {
+                string LstrComando = "select gstDEUtDeuda.DEUcodigo as CÓDIGO, YEAR(gstCUOtCuota.CUOano) as AÑO, gstDEUtDeuda.DEUdescripcion as DESCRIPCIÓN, gstDEUtDeuda.DEUmonto as MONTO from gstDEUtDeuda inner join gstCUOtCuota on gstDEUtDeuda.CUOcodigo = gstCUOtCuota.CUOcodigo inner join gstCONpConcepto on gstCUOtCuota.CONcodigo = gstCONpConcepto.CONcodigo where gstDEUtDeuda.ALMcodigo = " + LintCodigoAlumno + " AND gstDEUtDeuda.DEUcodigo not in (select DEUcodigo from gstEXOtExoneracion) AND gstDEUtDeuda.DEUcodigo in (select DEUcodigo from gstDPGtDeudaPago) AND gstCONpConcepto.CONtipo = '" + LstrParametro + "'";
+
+                SqlDataAdapter LobjAdaptador = new SqlDataAdapter(LstrComando, LobjConexion.Conectar());
+                DataTable LobjDataTable = new DataTable();
+                LobjAdaptador.Fill(LobjDataTable);
+                LobjConexion.Conectar().Close();
+
+                return LobjDataTable;
+            }
+        }
     }
 }

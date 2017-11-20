@@ -429,6 +429,7 @@
             this.cmbFiltrarDeudaPago.Name = "cmbFiltrarDeudaPago";
             this.cmbFiltrarDeudaPago.Size = new System.Drawing.Size(132, 21);
             this.cmbFiltrarDeudaPago.TabIndex = 28;
+            this.cmbFiltrarDeudaPago.SelectedIndexChanged += new System.EventHandler(this.cmbFiltrarDeudaPago_SelectedIndexChanged);
             // 
             // dgdDeudaPago
             // 
