@@ -55,6 +55,10 @@
             this.btnReporteDeudasSeccion = new System.Windows.Forms.Button();
             this.btnReporteDeudasAlumno = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnCuota = new Bunifu.Framework.UI.BunifuTileButton();
+            this.pnlCuota = new System.Windows.Forms.Panel();
+            this.btnGestionarProgramaCuota = new System.Windows.Forms.Button();
+            this.btnGestionarConcepto = new System.Windows.Forms.Button();
             this.pnlPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExpandir)).BeginInit();
@@ -63,6 +67,7 @@
             this.panel1.SuspendLayout();
             this.pnlRecibo.SuspendLayout();
             this.pnlReporte.SuspendLayout();
+            this.pnlCuota.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -170,6 +175,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel2.Controls.Add(this.btnCuota);
             this.panel2.Controls.Add(this.btnReporte);
             this.panel2.Controls.Add(this.btnUsuario);
             this.panel2.Controls.Add(this.btnRecibo);
@@ -178,7 +184,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 26);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(93, 410);
+            this.panel2.Size = new System.Drawing.Size(93, 529);
             this.panel2.TabIndex = 1;
             // 
             // btnReporte
@@ -195,7 +201,7 @@
             this.btnReporte.ImageZoom = 50;
             this.btnReporte.LabelPosition = 29;
             this.btnReporte.LabelText = "REPORTE";
-            this.btnReporte.Location = new System.Drawing.Point(5, 246);
+            this.btnReporte.Location = new System.Drawing.Point(5, 343);
             this.btnReporte.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReporte.Name = "btnReporte";
             this.btnReporte.Size = new System.Drawing.Size(84, 74);
@@ -218,7 +224,7 @@
             this.btnUsuario.ImageZoom = 50;
             this.btnUsuario.LabelPosition = 29;
             this.btnUsuario.LabelText = "USUARIO";
-            this.btnUsuario.Location = new System.Drawing.Point(4, 328);
+            this.btnUsuario.Location = new System.Drawing.Point(5, 425);
             this.btnUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUsuario.Name = "btnUsuario";
             this.btnUsuario.Size = new System.Drawing.Size(84, 74);
@@ -240,7 +246,7 @@
             this.btnRecibo.ImageZoom = 50;
             this.btnRecibo.LabelPosition = 29;
             this.btnRecibo.LabelText = "RECIBO";
-            this.btnRecibo.Location = new System.Drawing.Point(4, 85);
+            this.btnRecibo.Location = new System.Drawing.Point(5, 97);
             this.btnRecibo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRecibo.Name = "btnRecibo";
             this.btnRecibo.Size = new System.Drawing.Size(84, 74);
@@ -263,7 +269,7 @@
             this.btnMatricula.ImageZoom = 50;
             this.btnMatricula.LabelPosition = 29;
             this.btnMatricula.LabelText = "MATRICULA";
-            this.btnMatricula.Location = new System.Drawing.Point(4, 164);
+            this.btnMatricula.Location = new System.Drawing.Point(5, 179);
             this.btnMatricula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMatricula.Name = "btnMatricula";
             this.btnMatricula.Size = new System.Drawing.Size(84, 74);
@@ -285,7 +291,7 @@
             this.btnAlumno.ImageZoom = 50;
             this.btnAlumno.LabelPosition = 29;
             this.btnAlumno.LabelText = "ALUMNO";
-            this.btnAlumno.Location = new System.Drawing.Point(4, 7);
+            this.btnAlumno.Location = new System.Drawing.Point(5, 15);
             this.btnAlumno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAlumno.Name = "btnAlumno";
             this.btnAlumno.Size = new System.Drawing.Size(84, 74);
@@ -300,12 +306,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel1.Controls.Add(this.pnlCuota);
             this.panel1.Controls.Add(this.pnlRecibo);
             this.panel1.Controls.Add(this.pnlReporte);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(93, 26);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(731, 410);
+            this.panel1.Size = new System.Drawing.Size(731, 529);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             this.panel1.MouseLeave += new System.EventHandler(this.panel1_MouseLeave);
@@ -319,7 +326,7 @@
             this.pnlRecibo.Controls.Add(this.btnExonerarDeudasPendientes);
             this.pnlRecibo.Controls.Add(this.btnCuotaExtraordinaria);
             this.pnlRecibo.Controls.Add(this.btnGenerarFormatoRecibo);
-            this.pnlRecibo.Location = new System.Drawing.Point(0, 81);
+            this.pnlRecibo.Location = new System.Drawing.Point(-1, 91);
             this.pnlRecibo.Name = "pnlRecibo";
             this.pnlRecibo.Size = new System.Drawing.Size(155, 87);
             this.pnlRecibo.TabIndex = 3;
@@ -398,7 +405,7 @@
             this.pnlReporte.Controls.Add(this.button1);
             this.pnlReporte.Controls.Add(this.btnReporteDeudasSeccion);
             this.pnlReporte.Controls.Add(this.btnReporteDeudasAlumno);
-            this.pnlReporte.Location = new System.Drawing.Point(0, 251);
+            this.pnlReporte.Location = new System.Drawing.Point(-1, 349);
             this.pnlReporte.Name = "pnlReporte";
             this.pnlReporte.Size = new System.Drawing.Size(155, 65);
             this.pnlReporte.TabIndex = 0;
@@ -457,12 +464,77 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnCuota
+            // 
+            this.btnCuota.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnCuota.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCuota.color = System.Drawing.Color.DodgerBlue;
+            this.btnCuota.colorActive = System.Drawing.Color.SteelBlue;
+            this.btnCuota.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCuota.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnCuota.ForeColor = System.Drawing.Color.White;
+            this.btnCuota.Image = global::gstPresentacion.Properties.Resources.note__1_;
+            this.btnCuota.ImagePosition = 7;
+            this.btnCuota.ImageZoom = 50;
+            this.btnCuota.LabelPosition = 29;
+            this.btnCuota.LabelText = "CUOTA";
+            this.btnCuota.Location = new System.Drawing.Point(5, 261);
+            this.btnCuota.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCuota.Name = "btnCuota";
+            this.btnCuota.Size = new System.Drawing.Size(84, 74);
+            this.btnCuota.TabIndex = 6;
+            this.tltPrincipal.SetToolTip(this.btnCuota, "Matrícula");
+            this.btnCuota.Click += new System.EventHandler(this.btnCuota_Click);
+            this.btnCuota.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnCuota_MouseMove);
+            // 
+            // pnlCuota
+            // 
+            this.pnlCuota.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pnlCuota.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pnlCuota.Controls.Add(this.btnGestionarProgramaCuota);
+            this.pnlCuota.Controls.Add(this.btnGestionarConcepto);
+            this.pnlCuota.Location = new System.Drawing.Point(-1, 276);
+            this.pnlCuota.Name = "pnlCuota";
+            this.pnlCuota.Size = new System.Drawing.Size(167, 45);
+            this.pnlCuota.TabIndex = 4;
+            // 
+            // btnGestionarProgramaCuota
+            // 
+            this.btnGestionarProgramaCuota.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnGestionarProgramaCuota.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnGestionarProgramaCuota.FlatAppearance.BorderSize = 0;
+            this.btnGestionarProgramaCuota.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGestionarProgramaCuota.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGestionarProgramaCuota.Location = new System.Drawing.Point(0, 21);
+            this.btnGestionarProgramaCuota.Name = "btnGestionarProgramaCuota";
+            this.btnGestionarProgramaCuota.Size = new System.Drawing.Size(167, 23);
+            this.btnGestionarProgramaCuota.TabIndex = 1;
+            this.btnGestionarProgramaCuota.Text = "Gestionar Programa de Cuotas";
+            this.btnGestionarProgramaCuota.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGestionarProgramaCuota.UseVisualStyleBackColor = false;
+            // 
+            // btnGestionarConcepto
+            // 
+            this.btnGestionarConcepto.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnGestionarConcepto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnGestionarConcepto.FlatAppearance.BorderSize = 0;
+            this.btnGestionarConcepto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGestionarConcepto.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGestionarConcepto.Location = new System.Drawing.Point(0, 0);
+            this.btnGestionarConcepto.Name = "btnGestionarConcepto";
+            this.btnGestionarConcepto.Size = new System.Drawing.Size(167, 23);
+            this.btnGestionarConcepto.TabIndex = 0;
+            this.btnGestionarConcepto.Text = "Gestionar Concepto";
+            this.btnGestionarConcepto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGestionarConcepto.UseVisualStyleBackColor = false;
+            this.btnGestionarConcepto.Click += new System.EventHandler(this.btnGestionarConcepto_Click);
+            // 
             // gstFrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(824, 436);
+            this.ClientSize = new System.Drawing.Size(824, 555);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -484,6 +556,7 @@
             this.panel1.ResumeLayout(false);
             this.pnlRecibo.ResumeLayout(false);
             this.pnlReporte.ResumeLayout(false);
+            this.pnlCuota.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -515,5 +588,9 @@
         private System.Windows.Forms.Button btnCuotaExtraordinaria;
         private System.Windows.Forms.Button btnGenerarFormatoRecibo;
         private System.Windows.Forms.Button btnFraccionarApafa;
+        private System.Windows.Forms.Panel pnlCuota;
+        private System.Windows.Forms.Button btnGestionarProgramaCuota;
+        private System.Windows.Forms.Button btnGestionarConcepto;
+        private Bunifu.Framework.UI.BunifuTileButton btnCuota;
     }
 }

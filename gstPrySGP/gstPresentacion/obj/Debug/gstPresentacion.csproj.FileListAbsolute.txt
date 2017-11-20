@@ -96,3 +96,4 @@ C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstPresentacion\bin\Debug\gstNegocio.dll
 C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstPresentacion\bin\Debug\gstDatos.pdb
 C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstPresentacion\bin\Debug\gstNegocio.pdb
 C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstPresentacion\bin\Debug\gstPresentacion.exe.config
+C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstPresentacion\obj\Debug\gstPresentacion.gstCuota.gstFrmGestionarConcepto.resources

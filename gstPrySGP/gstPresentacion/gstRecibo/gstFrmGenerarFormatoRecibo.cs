@@ -293,6 +293,7 @@ namespace gstPresentacion
             {
                 cmbReciboGenerado.Items.Add(LobjRegistro);
             }
+            cmbReciboGenerado.SelectedIndex = 0;
         }
 
         private void btnVisualizarImprimir_Click(object sender, EventArgs e)
@@ -325,6 +326,9 @@ namespace gstPresentacion
             cmbTareas.Items.Add("Agregar Cuotas Extraordinarias");
             cmbTareas.Items.Add("Exonerar Cuotas Extraordinarias");
             cmbTareas.Items.Add("Fraccionar Cuota de APAFA");
+
+            cmbFiltrarDeudaPago.SelectedIndex = 0;
+            cmbTareas.SelectedIndex = 0;
         }
 
         private void btnEliminarRecibo_Click(object sender, EventArgs e)

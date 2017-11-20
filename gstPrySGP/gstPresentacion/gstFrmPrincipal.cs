@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using gstPresentacion;
+using gstPresentacion.gstCuota;
+
 namespace gstPre
 {
     public partial class gstFrmPrincipal : Form
@@ -117,6 +119,7 @@ namespace gstPre
         {
             pnlReporte.Visible = false;
             pnlRecibo.Visible=false;
+            pnlCuota.Visible = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -267,6 +270,26 @@ namespace gstPre
         {
             pnlReporte.Visible = false;
             pnlRecibo.Visible = false;
+            pnlCuota.Visible = false;
+        }
+
+        private void btnCuota_Click(object sender, EventArgs e)
+        {
+            pnlCuota.Visible = true;
+        }
+
+        private void btnCuota_MouseMove(object sender, MouseEventArgs e)
+        {
+            pnlCuota.Visible = true;
+        }
+
+        private void btnGestionarConcepto_Click(object sender, EventArgs e)
+        {
+            gstFrmGestionarConcepto frmGC = new gstFrmGestionarConcepto();
+            frmGC.MdiParent = this.MdiParent;
+            frmGC.StartPosition = FormStartPosition.CenterParent;
+            frmGC.Show();
+            pnlRecibo.Hide();
         }
     }
 }
