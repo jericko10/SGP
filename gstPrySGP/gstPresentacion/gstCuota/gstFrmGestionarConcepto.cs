@@ -198,7 +198,7 @@ namespace gstPresentacion.gstCuota
             }
             else
             {
-                MessageBox.Show("Debe seleccionar un registro,", "Gestionar Concepto");
+                MessageBox.Show("Debe seleccionar un registro.", "Gestionar Concepto");
             }
         }
 
@@ -212,11 +212,6 @@ namespace gstPresentacion.gstCuota
             txtDescripcion.Text = LobjConcepto.CONdescripcion;
             txtMonto.Text = LobjConcepto.CONmonto.Replace(",",".");
             cmbTipo.Text = LobjConcepto.CONtipo;
-        }
-
-        private void pnlGestionarConcepto_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void pnlGestionarConcepto_MouseUp(object sender, MouseEventArgs e)
@@ -235,6 +230,11 @@ namespace gstPresentacion.gstCuota
         {
             pos = new Point(e.X, e.Y);
             move = true;
+        }
+
+        private void pnlGestionarConcepto_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -56,6 +56,7 @@
     <Compile Include="gstClsConcepto.cs" />
     <Compile Include="gstClsConexion.cs" />
     <Compile Include="gstClsExoneracion.cs" />
+    <Compile Include="gstClsProgramaCuota.cs" />
     <Compile Include="gstClsRecibo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
