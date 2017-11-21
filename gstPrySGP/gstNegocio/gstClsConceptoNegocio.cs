@@ -11,7 +11,6 @@ namespace gstNegocio
     public class gstClsConceptoNegocio
     {
         gstClsConcepto GobjConcepto = new gstClsConcepto();
-        gst
 
         public DataTable mtdCargarDatos()
         {
@@ -37,6 +36,6 @@ namespace gstNegocio
         {
             return GobjConcepto.mtdModificar(LobjModelo);
         }
-        public int (gstClsExoneracion
+
     }
 }
