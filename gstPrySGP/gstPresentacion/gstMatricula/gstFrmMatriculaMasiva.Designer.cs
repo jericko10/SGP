@@ -34,12 +34,12 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnCerrarMM = new Bunifu.Framework.UI.BunifuImageButton();
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
-            this.txtArchivoMM = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnCargarArchivoExcelMM = new System.Windows.Forms.Button();
             this.btnGenerarMatriculaMasivaMM = new System.Windows.Forms.Button();
+            this.dgvMatriculaMasiva = new System.Windows.Forms.DataGridView();
             this.pnlMatriculaMasiva.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrarMM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMatriculaMasiva)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -96,40 +96,32 @@
             this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
             this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
             // 
-            // txtArchivoMM
-            // 
-            this.txtArchivoMM.Location = new System.Drawing.Point(55, 114);
-            this.txtArchivoMM.Name = "txtArchivoMM";
-            this.txtArchivoMM.Size = new System.Drawing.Size(187, 20);
-            this.txtArchivoMM.TabIndex = 32;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 83);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 16);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "ARCHIVO";
-            // 
             // btnCargarArchivoExcelMM
             // 
-            this.btnCargarArchivoExcelMM.Location = new System.Drawing.Point(286, 112);
+            this.btnCargarArchivoExcelMM.Location = new System.Drawing.Point(24, 52);
             this.btnCargarArchivoExcelMM.Name = "btnCargarArchivoExcelMM";
             this.btnCargarArchivoExcelMM.Size = new System.Drawing.Size(153, 23);
             this.btnCargarArchivoExcelMM.TabIndex = 34;
             this.btnCargarArchivoExcelMM.Text = "CARGAR ARCHIVO EXCEL";
             this.btnCargarArchivoExcelMM.UseVisualStyleBackColor = true;
+            this.btnCargarArchivoExcelMM.Click += new System.EventHandler(this.btnCargarArchivoExcelMM_Click);
             // 
             // btnGenerarMatriculaMasivaMM
             // 
-            this.btnGenerarMatriculaMasivaMM.Location = new System.Drawing.Point(181, 191);
+            this.btnGenerarMatriculaMasivaMM.Location = new System.Drawing.Point(291, 38);
             this.btnGenerarMatriculaMasivaMM.Name = "btnGenerarMatriculaMasivaMM";
             this.btnGenerarMatriculaMasivaMM.Size = new System.Drawing.Size(139, 54);
             this.btnGenerarMatriculaMasivaMM.TabIndex = 35;
             this.btnGenerarMatriculaMasivaMM.Text = "GENERAR MATRÍCULA MASIVA";
             this.btnGenerarMatriculaMasivaMM.UseVisualStyleBackColor = true;
+            // 
+            // dgvMatriculaMasiva
+            // 
+            this.dgvMatriculaMasiva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMatriculaMasiva.Location = new System.Drawing.Point(106, 116);
+            this.dgvMatriculaMasiva.Name = "dgvMatriculaMasiva";
+            this.dgvMatriculaMasiva.Size = new System.Drawing.Size(240, 150);
+            this.dgvMatriculaMasiva.TabIndex = 36;
             // 
             // gstFrmMatriculaMasiva
             // 
@@ -137,10 +129,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(500, 278);
+            this.Controls.Add(this.dgvMatriculaMasiva);
             this.Controls.Add(this.btnGenerarMatriculaMasivaMM);
             this.Controls.Add(this.btnCargarArchivoExcelMM);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtArchivoMM);
             this.Controls.Add(this.pnlMatriculaMasiva);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "gstFrmMatriculaMasiva";
@@ -149,8 +140,8 @@
             this.pnlMatriculaMasiva.ResumeLayout(false);
             this.pnlMatriculaMasiva.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrarMM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMatriculaMasiva)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -162,8 +153,7 @@
         private Bunifu.Framework.UI.BunifuImageButton btnCerrarMM;
         private System.Windows.Forms.Button btnGenerarMatriculaMasivaMM;
         private System.Windows.Forms.Button btnCargarArchivoExcelMM;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtArchivoMM;
         private System.DirectoryServices.DirectorySearcher directorySearcher1;
+        private System.Windows.Forms.DataGridView dgvMatriculaMasiva;
     }
 }

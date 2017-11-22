@@ -51,5 +51,10 @@ namespace gstPresentacion
             pos = new Point(e.X, e.Y);
             move = true;
         }
+
+        private void btnAgregarCuotaApafa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

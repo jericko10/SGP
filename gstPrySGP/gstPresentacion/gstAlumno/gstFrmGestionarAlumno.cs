@@ -79,5 +79,10 @@ namespace gstPre
             move = true;
        
     }
+
+        private void btnGuardarGA_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

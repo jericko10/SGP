@@ -7,3 +7,12 @@ C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstDatos\bin\Debug\EntityFramework.SqlSe
 C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstDatos\obj\Debug\gstDatos.csprojResolveAssemblyReference.cache
 C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstDatos\obj\Debug\gstDatos.dll
 C:\Users\LuisEd\Documents\SGP\gstPrySGP\gstDatos\obj\Debug\gstDatos.pdb
+C:\Users\percylp_lp\Documents\GitHub\SGP\gstPrySGP\gstDatos\bin\Debug\gstDatos.dll
+C:\Users\percylp_lp\Documents\GitHub\SGP\gstPrySGP\gstDatos\bin\Debug\gstDatos.pdb
+C:\Users\percylp_lp\Documents\GitHub\SGP\gstPrySGP\gstDatos\bin\Debug\EntityFramework.dll
+C:\Users\percylp_lp\Documents\GitHub\SGP\gstPrySGP\gstDatos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\percylp_lp\Documents\GitHub\SGP\gstPrySGP\gstDatos\bin\Debug\EntityFramework.xml
+C:\Users\percylp_lp\Documents\GitHub\SGP\gstPrySGP\gstDatos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\percylp_lp\Documents\GitHub\SGP\gstPrySGP\gstDatos\obj\Debug\gstDatos.csprojResolveAssemblyReference.cache
+C:\Users\percylp_lp\Documents\GitHub\SGP\gstPrySGP\gstDatos\obj\Debug\gstDatos.dll
+C:\Users\percylp_lp\Documents\GitHub\SGP\gstPrySGP\gstDatos\obj\Debug\gstDatos.pdb

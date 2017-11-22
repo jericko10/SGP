@@ -350,6 +350,7 @@
             this.btnAgregarCuotaApafa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregarCuotaApafa.Textcolor = System.Drawing.Color.White;
             this.btnAgregarCuotaApafa.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarCuotaApafa.Click += new System.EventHandler(this.btnAgregarCuotaApafa_Click);
             // 
             // cbxEstadoCA
             // 

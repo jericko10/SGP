@@ -1,4 +1,6 @@
-﻿using System;
+﻿using gstDatos;
+using gstNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +9,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using gstNegocio;
 
 namespace gstPresentacion.gstMatricula
 {
+
+    
     public partial class gstFrmMatriculaMasiva : Form
     {
+        gstClsMatriculaNegocio GobjMatriculaNegocio = new gstClsMatriculaNegocio();
+
         private Point pos = Point.Empty;
         private bool move = false;
         public gstFrmMatriculaMasiva()
@@ -46,5 +53,28 @@ namespace gstPresentacion.gstMatricula
         {
             this.Close();
         }
+
+        private void btnCargarArchivoExcelMM_Click(object sender, EventArgs e)
+        {
+            GobjMatriculaNegocio.mtdImportar(dgvMatriculaMasiva,"Matricula");
+        }
+
+        private void dgvMatriculaMasiva_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
