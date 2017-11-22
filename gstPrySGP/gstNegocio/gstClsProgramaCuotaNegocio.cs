@@ -24,12 +24,27 @@ namespace gstNegocio
 
         public DataTable mtdBuscarProgramaCuota(string LstrAño, string LstrParametro)
         {
-            return LobjProgramaCuota.mtdBuscarProgramaCuota(LstrAño,LstrParametro);
+            return LobjProgramaCuota.mtdBuscarProgramaCuota(LstrAño, LstrParametro);
         }
 
         public int mtdGuardar(gstClsProgramaCuota LobjModelo)
         {
             return LobjProgramaCuota.mtdGuardar(LobjModelo);
+        }
+
+        public gstClsProgramaCuota mtdObtenerProgramaCuota(int LintCodigoProgramaCuota)
+        {
+            return LobjProgramaCuota.mtdObtenerProgramaCuota(LintCodigoProgramaCuota);
+        }
+
+        public int mtdModificar(gstClsProgramaCuota LobjModelo)
+        {
+            return LobjProgramaCuota.mtdModificar(LobjModelo);
+        }
+
+        public int mtdAplicarProgramaCuota(string LstrAño)
+        {
+            return LobjProgramaCuota.mtdAplicarProgramaCuota(LstrAño);
         }
     }
 }

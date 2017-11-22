@@ -133,13 +133,67 @@ namespace gstPresentacion.gstCuota
 
             if (MessageBox.Show("¿Está seguro de realizar la operación?", "GESTIONAR PROGRAMA DE CUOTAS", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                int LintResultado = LobjProgramaCuotaNegocio.mtdGuardar(LobjProgramaCuota);
-                if (LintResultado == -2)
+                if(LblnModificar)
                 {
-                    MessageBox.Show("La cuota se encuentra registrado para el presente año. Modifique la actual cuota ó registre la cuota en un año diferente.", "ERROR");
-                    mtdCargarDatos();
+                    LobjProgramaCuota.CUOcodigo = LintCodigoProgramaCuota;
+                    int LintResultado = LobjProgramaCuotaNegocio.mtdModificar(LobjProgramaCuota);
+                    if (LintResultado == 1)
+                    {
+                        MessageBox.Show("Operación realizada con éxito.", "CORRECTO");
+                        mtdCargarDatos();
+                        LblnModificar = false;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error en la operación.", "ERROR");
+                        mtdCargarDatos();
+                        LblnModificar = false;
+                    }
                 }
-                else if (LintResultado == 1)
+                else
+                {
+                    int LintResultado = LobjProgramaCuotaNegocio.mtdGuardar(LobjProgramaCuota);
+                    if (LintResultado == -2)
+                    {
+                        MessageBox.Show("La cuota se encuentra registrado para el presente año. Modifique la actual cuota ó registre la cuota en un año diferente.", "ERROR");
+                    }
+                    else if (LintResultado == 1)
+                    {
+                        MessageBox.Show("Operación realizada con éxito.", "CORRECTO");
+                        mtdCargarDatos();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error en la operación.", "ERROR");
+                        mtdCargarDatos();
+                    }
+                }
+            }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (dgdProgramaCuota.CurrentRow.Cells[0].Value != null)
+            {
+                int LintCodigoPrograma = Convert.ToInt32(dgdProgramaCuota.CurrentRow.Cells[0].Value);
+                LintCodigoProgramaCuota = LintCodigoPrograma;
+                mtdLlenarCampos(LintCodigoPrograma);
+
+                LblnModificar = true;
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un registro.", "GESTIONAR PROGRAMA DE CUOTAS");
+            }
+        }
+
+        private void btnAplicarProgramaCuota_Click(object sender, EventArgs e)
+        {
+            gstClsProgramaCuotaNegocio LobjProgramaCuotaNegocio = new gstClsProgramaCuotaNegocio();
+            if (MessageBox.Show("¿Está seguro de realizar la operación?", "GESTIONAR PROGRAMA DE CUOTAS", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                int LintRespuesta = LobjProgramaCuotaNegocio.mtdAplicarProgramaCuota(nupAplicarAño.Value.ToString());
+                if (LintRespuesta == 1)
                 {
                     MessageBox.Show("Operación realizada con éxito.", "CORRECTO");
                     mtdCargarDatos();
@@ -152,30 +206,17 @@ namespace gstPresentacion.gstCuota
             }
         }
 
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-            if (dgdProgramaCuota.CurrentRow.Cells[0].Value != null)
-            {
-                int LintCodigoProgramaCuota = Convert.ToInt32(dgdProgramaCuota.CurrentRow.Cells[0].Value);
-
-                mtdLlenarCampos(LintCodigoProgramaCuota);
-
-                LblnModificar = true;
-            }
-            else
-            {
-                MessageBox.Show("Debe seleccionar un registro.", "GESTIONAR PROGRAMA DE CUOTAS");
-            }
-        }
-
-        private void btnAplicarProgramaCuota_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public void mtdLlenarCampos(int LintCodigoProgramaCuota)
         {
+            gstClsProgramaCuota LobjProgramaCuota = new gstClsProgramaCuota();
+            gstClsProgramaCuotaNegocio LobjProgramaCuotaNegocio = new gstClsProgramaCuotaNegocio();
+            LobjProgramaCuota = LobjProgramaCuotaNegocio.mtdObtenerProgramaCuota(LintCodigoProgramaCuota);
 
+            cmbConcepto.Text = LobjProgramaCuota.CONdescripcion;
+            nupAño.Value = Convert.ToInt32(LobjProgramaCuota.CUOano);
+            cmbMes.Text = LobjProgramaCuota.CUOmes;
+            cmbPeriodo.Text = LobjProgramaCuota.CUOperiodo;
+            cmbAlcance.Text = LobjProgramaCuota.CUOalcance;
         }
     }
 }
