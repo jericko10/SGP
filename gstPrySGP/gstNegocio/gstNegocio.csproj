@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -42,7 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gstClsConceptoNegocio.cs" />
+<<<<<<< HEAD
     <Compile Include="gstClsMatriculaNegocio.cs" />
+=======
+    <Compile Include="gstClsProgramaCuotaNegocio.cs" />
+>>>>>>> 0cab17d52552ebd3d7b5d071f50ba2d687d665e0
     <Compile Include="gstClsReciboNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

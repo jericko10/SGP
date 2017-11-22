@@ -15,6 +15,9 @@ namespace gstPresentacion.gstCuota
 {
     public partial class gstFrmGestionarConcepto : Form
     {
+        private Point pos = Point.Empty;
+        private bool move = false;
+
         public bool LblnModificar = false;
         public int LintCodigoConcepto = 0;
         public gstFrmGestionarConcepto()
@@ -195,7 +198,7 @@ namespace gstPresentacion.gstCuota
             }
             else
             {
-                MessageBox.Show("Debe seleccionar un registro,", "Gestionar Concepto");
+                MessageBox.Show("Debe seleccionar un registro.", "Gestionar Concepto");
             }
         }
 
@@ -209,6 +212,29 @@ namespace gstPresentacion.gstCuota
             txtDescripcion.Text = LobjConcepto.CONdescripcion;
             txtMonto.Text = LobjConcepto.CONmonto.Replace(",",".");
             cmbTipo.Text = LobjConcepto.CONtipo;
+        }
+
+        private void pnlGestionarConcepto_MouseUp(object sender, MouseEventArgs e)
+        {
+            move = false;
+        }
+
+        private void pnlGestionarConcepto_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (move)
+                this.Location = new Point((this.Left + e.X - pos.X),
+                    (this.Top + e.Y - pos.Y));
+        }
+
+        private void pnlGestionarConcepto_MouseDown(object sender, MouseEventArgs e)
+        {
+            pos = new Point(e.X, e.Y);
+            move = true;
+        }
+
+        private void pnlGestionarConcepto_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gstFrmGestionarConcepto));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlGestionarConcepto = new System.Windows.Forms.Panel();
             this.lblTitulo = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.btnCerrar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnCerrarFormulario = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtDescripcion = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.lblDescripcion = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblMonto = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblTipo = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
-            this.txtBuscar = new Bunifu.Framework.UI.BunifuTextbox();
             this.dgdConcepto = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.txtMonto = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtBuscar = new Bunifu.Framework.UI.BunifuTextbox();
+            this.btnCerrarFormulario = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnCerrar = new Bunifu.Framework.UI.BunifuImageButton();
             this.pnlGestionarConcepto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrarFormulario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgdConcepto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrarFormulario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlGestionarConcepto
@@ -62,6 +62,10 @@
             this.pnlGestionarConcepto.Name = "pnlGestionarConcepto";
             this.pnlGestionarConcepto.Size = new System.Drawing.Size(672, 32);
             this.pnlGestionarConcepto.TabIndex = 32;
+            this.pnlGestionarConcepto.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGestionarConcepto_Paint);
+            this.pnlGestionarConcepto.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlGestionarConcepto_MouseDown);
+            this.pnlGestionarConcepto.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlGestionarConcepto_MouseMove);
+            this.pnlGestionarConcepto.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlGestionarConcepto_MouseUp);
             // 
             // lblTitulo
             // 
@@ -72,39 +76,6 @@
             this.lblTitulo.Size = new System.Drawing.Size(91, 16);
             this.lblTitulo.TabIndex = 31;
             this.lblTitulo.Text = "CONCEPTO";
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.BackgroundImage = global::gstPresentacion.Properties.Resources.close_1540630_960_720;
-            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCerrar.Image = global::gstPresentacion.Properties.Resources.close_1540630_960_720;
-            this.btnCerrar.ImageActive = null;
-            this.btnCerrar.Location = new System.Drawing.Point(1031, 3);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(36, 29);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 31;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Zoom = 10;
-            // 
-            // btnCerrarFormulario
-            // 
-            this.btnCerrarFormulario.BackColor = System.Drawing.Color.Transparent;
-            this.btnCerrarFormulario.BackgroundImage = global::gstPresentacion.Properties.Resources.close_1540630_960_720;
-            this.btnCerrarFormulario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCerrarFormulario.Image = global::gstPresentacion.Properties.Resources.close_1540630_960_720;
-            this.btnCerrarFormulario.ImageActive = null;
-            this.btnCerrarFormulario.Location = new System.Drawing.Point(636, 0);
-            this.btnCerrarFormulario.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCerrarFormulario.Name = "btnCerrarFormulario";
-            this.btnCerrarFormulario.Size = new System.Drawing.Size(36, 29);
-            this.btnCerrarFormulario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrarFormulario.TabIndex = 32;
-            this.btnCerrarFormulario.TabStop = false;
-            this.btnCerrarFormulario.Zoom = 10;
-            this.btnCerrarFormulario.Click += new System.EventHandler(this.btnCerrarFormulario_Click);
             // 
             // txtDescripcion
             // 
@@ -155,38 +126,23 @@
             this.cmbTipo.TabIndex = 46;
             this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
             // 
-            // txtBuscar
-            // 
-            this.txtBuscar.BackColor = System.Drawing.Color.Silver;
-            this.txtBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBuscar.BackgroundImage")));
-            this.txtBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscar.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.txtBuscar.Icon = ((System.Drawing.Image)(resources.GetObject("txtBuscar.Icon")));
-            this.txtBuscar.Location = new System.Drawing.Point(234, 297);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(284, 32);
-            this.txtBuscar.TabIndex = 47;
-            this.txtBuscar.text = "BUSCAR POR DESCRIPCIÓN...";
-            this.txtBuscar.KeyUp += new System.EventHandler(this.txtBuscar_KeyUp);
-            // 
             // dgdConcepto
             // 
             this.dgdConcepto.AllowUserToAddRows = false;
             this.dgdConcepto.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgdConcepto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgdConcepto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgdConcepto.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgdConcepto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgdConcepto.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgdConcepto.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgdConcepto.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgdConcepto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgdConcepto.DoubleBuffered = true;
             this.dgdConcepto.EnableHeadersVisualStyles = false;
@@ -229,6 +185,54 @@
             this.txtMonto.TabIndex = 51;
             this.txtMonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMonto_KeyPress);
             // 
+            // txtBuscar
+            // 
+            this.txtBuscar.BackColor = System.Drawing.Color.Silver;
+            this.txtBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBuscar.BackgroundImage")));
+            this.txtBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscar.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.txtBuscar.Icon = ((System.Drawing.Image)(resources.GetObject("txtBuscar.Icon")));
+            this.txtBuscar.Location = new System.Drawing.Point(234, 297);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(284, 32);
+            this.txtBuscar.TabIndex = 47;
+            this.txtBuscar.text = "BUSCAR POR DESCRIPCIÓN...";
+            this.txtBuscar.KeyUp += new System.EventHandler(this.txtBuscar_KeyUp);
+            // 
+            // btnCerrarFormulario
+            // 
+            this.btnCerrarFormulario.BackColor = System.Drawing.Color.Transparent;
+            this.btnCerrarFormulario.BackgroundImage = global::gstPresentacion.Properties.Resources.close_1540630_960_720;
+            this.btnCerrarFormulario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCerrarFormulario.Image = global::gstPresentacion.Properties.Resources.close_1540630_960_720;
+            this.btnCerrarFormulario.ImageActive = null;
+            this.btnCerrarFormulario.Location = new System.Drawing.Point(636, 0);
+            this.btnCerrarFormulario.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCerrarFormulario.Name = "btnCerrarFormulario";
+            this.btnCerrarFormulario.Size = new System.Drawing.Size(36, 29);
+            this.btnCerrarFormulario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrarFormulario.TabIndex = 32;
+            this.btnCerrarFormulario.TabStop = false;
+            this.btnCerrarFormulario.Zoom = 10;
+            this.btnCerrarFormulario.Click += new System.EventHandler(this.btnCerrarFormulario_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCerrar.BackgroundImage = global::gstPresentacion.Properties.Resources.close_1540630_960_720;
+            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCerrar.Image = global::gstPresentacion.Properties.Resources.close_1540630_960_720;
+            this.btnCerrar.ImageActive = null;
+            this.btnCerrar.Location = new System.Drawing.Point(1031, 3);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(36, 29);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 31;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Zoom = 10;
+            // 
             // gstFrmGestionarConcepto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -253,9 +257,9 @@
             this.Load += new System.EventHandler(this.gstFrmGestionarConcepto_Load);
             this.pnlGestionarConcepto.ResumeLayout(false);
             this.pnlGestionarConcepto.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrarFormulario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgdConcepto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrarFormulario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

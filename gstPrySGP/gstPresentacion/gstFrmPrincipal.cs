@@ -291,5 +291,14 @@ namespace gstPre
             frmGC.Show();
             pnlRecibo.Hide();
         }
+
+        private void btnGestionarProgramaCuota_Click(object sender, EventArgs e)
+        {
+            gstFrmGestionarProgramaCuota frmGPC = new gstFrmGestionarProgramaCuota();
+            frmGPC.MdiParent = this.MdiParent;
+            frmGPC.StartPosition = FormStartPosition.CenterParent;
+            frmGPC.Show();
+            pnlRecibo.Hide();
+        }
     }
 }

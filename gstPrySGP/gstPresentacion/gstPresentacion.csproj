@@ -37,6 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -85,6 +86,12 @@
     </Compile>
     <Compile Include="gstCuota\gstFrmGestionarConcepto.Designer.cs">
       <DependentUpon>gstFrmGestionarConcepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gstCuota\gstFrmGestionarProgramaCuota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gstCuota\gstFrmGestionarProgramaCuota.Designer.cs">
+      <DependentUpon>gstFrmGestionarProgramaCuota.cs</DependentUpon>
     </Compile>
     <Compile Include="gstMatricula\gstFrmMatriculaMasiva.cs">
       <SubType>Form</SubType>
@@ -168,6 +175,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="gstCuota\gstFrmGestionarConcepto.resx">
       <DependentUpon>gstFrmGestionarConcepto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gstCuota\gstFrmGestionarProgramaCuota.resx">
+      <DependentUpon>gstFrmGestionarProgramaCuota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gstMatricula\gstFrmMatriculaMasiva.resx">
       <DependentUpon>gstFrmMatriculaMasiva.cs</DependentUpon>

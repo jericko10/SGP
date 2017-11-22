@@ -36,5 +36,6 @@ namespace gstNegocio
         {
             return GobjConcepto.mtdModificar(LobjModelo);
         }
+
     }
 }
